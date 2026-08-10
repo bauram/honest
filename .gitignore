@@ -1,0 +1,4 @@
+# Carpetas de trabajo/auditoría — no forman parte del sitio desplegable
+capturas/
+_verificacion/
+.DS_Store
