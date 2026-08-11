@@ -1,0 +1,33 @@
+COM PUJAR AQUESTA WEB AL TEU GITHUB (bauram/honest)
+====================================================
+
+Opció ràpida (un sol pas):
+  1. Descomprimeix aquest zip.
+  2. Obre el Terminal dins la carpeta descomprimida.
+  3. Executa:  bash subir.sh
+
+Opció manual (el mateix, pas a pas):
+  git init
+  git add .
+  git commit -m "Honest web"
+  git branch -M main
+  git remote add origin git@github.com:bauram/honest.git
+  git push -u origin main
+
+Publicar la web (GitHub Pages):
+  Al repo → Settings → Pages → Source: Deploy from a branch
+  → Branch: main / (root) → Save
+  En un minut estarà a: https://bauram.github.io/honest/
+
+Nota: si el remot SSH et demana permís, és perquè uses la teva clau SSH
+(la que ja tens configurada). Si prefereixes HTTPS, canvia el remot per:
+  git remote set-url origin https://github.com/bauram/honest.git
+
+------------------------------------------------------
+PUJAR VERSIONS NOVES (després de la primera pujada)
+------------------------------------------------------
+Cada cop que canviïs fitxers, des de la carpeta del projecte:
+
+  bash deploy.sh "què has canviat"
+
+(fa git add + commit + push d'un sol cop).

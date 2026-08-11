@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://honest.cat/sitemap.xml
