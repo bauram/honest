@@ -30,3 +30,9 @@ Contacte: associaciohonest@gmail.com · 670 49 25 91 · C. Sant Llorenç 8, Baix
 
 ## Previsualització
 cd honest-web && python3 -m http.server 8000  →  http://localhost:8000
+
+
+## Castells = joc de construcció infantil
+Quan es demana un **"castell"** (castellet, construcció) a Honest **no és un castell medieval**: és el **joc de construcció infantil** de blocs i sòlids geomètrics de fusta/plàstic (tipus Montessori/Froebel) — torres, arcs, ninots, ciutats fetes apilant cubs, prismes, cilindres, cons, piràmides i boles. És la metàfora d'Honest PG (Playground): *es construeix peça a peça*.
+Dibuix: formes planes 2D, colors de marca purs (verd #35754b, blau #2d4b7e, vermell #c23b2e, groc #e9c73f), proporcions reals, tot sobre un mateix terra, diversos grups escampats; animació de peces que cauen una a una.
+Referència completa i imatges: `referencies/castells/README.md`. A la web: footer (`.castle .cbox3` a `web/index.html`).

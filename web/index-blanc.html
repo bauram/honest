@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Honest és una associació sense ànim de lucre de Palma: creativitat i tecnologia per al tercer sector.">
+<meta property="og:title" content="Honest — Creativitat i tecnologia per al tercer sector">
+<meta property="og:description" content="Associació sense ànim de lucre de Palma. Col·laborem amb entitats per desenvolupar projectes on la creativitat i la tecnologia es posen al servei de les persones.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='8' height='8' fill='%2335754b'/%3E%3Crect x='8' width='8' height='8' fill='%232d4b7e'/%3E%3Crect y='8' width='8' height='8' fill='%23c23b2e'/%3E%3Crect x='8' y='8' width='8' height='8' fill='%23e9c73f'/%3E%3C/svg%3E">
+<title>Honest PG</title>
+<style>/* Honest — versió senzilla. Una família (Helvetica), tinta i blanc; el color només al logotip. */
+:root{--ink:#1f3350;--mute:#6b7689;--paper:#ffffff;--line:#1f3350;
+  --g:#35754b;--b:#2d4b7e;--r:#c23b2e;--y:#e9c73f;
+  --m:clamp(16px,4vw,48px);--sans:"Helvetica Neue",Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--paper)}
+body{color:var(--ink);font:400 17px/1.5 var(--sans);padding-inline:var(--m);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+ol{list-style:none}
+b{font-weight:700}
+.page[hidden]{display:none!important}
+.L1,.L5{color:var(--g)}.L2{color:var(--b)}.L3,.L6{color:var(--r)}.L4{color:var(--y)}
+.u{border-bottom:1px solid currentColor}
+.u:hover,a:hover{color:var(--r)}
+.m{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+:focus-visible{outline:2px solid var(--r);outline-offset:3px}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:18px;border-bottom:2px solid var(--line)}
+.logo{font-size:24px;letter-spacing:-.03em}
+.top nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px 22px;font-size:13px}
+.top nav a[aria-current]{border-bottom:2px solid var(--ink)}
+
+.hero{padding-block:clamp(48px,10vw,140px) clamp(40px,6vw,80px)}
+.giant{font-weight:400;font-size:clamp(76px,24vw,380px);line-height:.8;letter-spacing:-.05em;margin-left:-.04em}
+.lede{font-size:clamp(20px,2.4vw,30px);line-height:1.25;letter-spacing:-.01em;max-width:30em;margin-top:24px}
+
+.pt{padding-block:clamp(40px,7vw,100px) clamp(24px,4vw,48px)}
+.pt h1{font-weight:700;font-size:clamp(40px,7vw,100px);line-height:.95;letter-spacing:-.045em;max-width:14em;text-wrap:balance}
+.pt .m{margin-bottom:20px}
+
+.s{padding-block:clamp(40px,6vw,80px) 0}
+.h{display:flex;justify-content:space-between;gap:16px;border-top:2px solid var(--line);padding-top:8px;margin-bottom:28px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.big{font-weight:700;font-size:clamp(24px,3vw,40px);line-height:1.1;letter-spacing:-.03em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,64px)}
+.two p+p{margin-top:1em}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px)}
+.three>div{border-top:1px solid var(--line);padding-top:10px}
+.three p{margin-top:6px}
+@media (max-width:760px){.two,.three{grid-template-columns:1fr}}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:40px clamp(16px,2vw,24px)}
+@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+.card .ph{aspect-ratio:4/5;overflow:hidden;background:#eef0f3}
+.card img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .3s}
+.card:hover img{filter:none}
+.card .blank{display:block;height:100%}
+.card h3{font-size:18px;font-weight:700;margin-top:10px;letter-spacing:-.01em}
+.card p{font-size:13px;color:var(--mute)}
+.card:hover h3{color:var(--r)}
+
+.rows li{display:grid;grid-template-columns:48px 1fr;border-top:1px solid var(--line);padding:10px 0 12px;font-size:clamp(18px,1.8vw,24px);letter-spacing:-.01em}
+.rows li:last-child{border-bottom:1px solid var(--line)}
+.rows span,.svc span{color:var(--mute);font-size:13px;padding-top:4px}
+.svc li{display:grid;grid-template-columns:48px 1fr;border-top:1px solid var(--line);padding:12px 0 20px}
+.svc b{font-size:clamp(18px,1.8vw,24px);letter-spacing:-.01em}
+.svc p{max-width:38em;margin-top:4px}
+
+.pics{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pics figure{aspect-ratio:4/5;overflow:hidden;background:#eef0f3}
+.pics img{width:100%;height:100%;object-fit:cover}
+@media (max-width:620px){.pics{grid-template-columns:1fr}}
+.next{display:block;font-weight:700;font-size:clamp(28px,5vw,64px);line-height:1;letter-spacing:-.04em}
+
+footer{margin-top:clamp(64px,9vw,120px);padding-bottom:32px}
+footer .m{margin-top:4px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ---- creativitat i tecnologia ---- */
+.c-red{color:var(--r)}.c-blue{color:var(--b)}
+.d-red{background:var(--r)}.d-blue{background:var(--b)}
+.card .ph img,.pics img{filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply;transition:filter .3s,mix-blend-mode .3s}
+.card:hover .ph img,.pics figure:hover img{filter:none;mix-blend-mode:normal}
+.card .ph.noimg{background:#eef0f3;position:relative}
+.card .blank i{position:absolute;display:block}
+.noimg.d-blue i{background:var(--b)}.noimg.d-red i{background:var(--r)}
+.s-circle{width:70%;aspect-ratio:1;border-radius:50%;right:-15%;bottom:12%}
+.s-half{width:80%;aspect-ratio:2/1;border-radius:999px 999px 0 0;left:10%;bottom:0}
+.s-square{width:52%;aspect-ratio:1;left:14%;bottom:20%}
+.s-tri{width:62%;aspect-ratio:1;clip-path:polygon(20% 0,100% 64%,0 100%);left:18%;top:20%}
+.dot{display:inline-block;width:8px;height:8px;margin-right:6px;vertical-align:0}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px)}
+.pil{border-top:2px solid currentColor}
+.pil .word{font-weight:700;font-size:clamp(44px,8vw,128px);line-height:.9;letter-spacing:-.055em;margin:14px 0 18px}
+.pil .intro{font-size:clamp(18px,1.6vw,22px);line-height:1.3;max-width:26em;margin-bottom:20px}
+.plist li{border-top:1px solid var(--line);padding:9px 0 12px}
+.plist li:last-child{border-bottom:1px solid var(--line)}
+.pil:nth-child(1){color:var(--r)}.pil:nth-child(2){color:var(--b)}
+.pil .intro,.pil .plist{color:var(--ink)}
+@media (max-width:760px){.pillars{grid-template-columns:1fr}}
+ul{list-style:none}
+.card .ph.d-red,.pics figure.d-red{background:var(--r)}.card .ph.d-blue,.pics figure.d-blue{background:var(--b)}
+.card .ph.noimg{background:#eef0f3}
+
+/* ---- menú superior ---- */
+.top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;margin-inline:0;padding:14px 0;border-bottom:2px solid var(--line);background:#fff;box-shadow:none}
+.top .logo{justify-self:start;font-size:24px}
+.top .menu{display:flex;gap:30px;font-size:16px;justify-content:center}
+.top .menu a{padding:6px 0;border-bottom:2px solid transparent}
+.top .menu a:hover{color:var(--g)}
+.top .menu a[aria-current]{color:var(--g);border-bottom-color:var(--g)}
+.top .cta{justify-self:end;background:#191919;color:#fff;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px;white-space:nowrap}
+.top .cta:hover,.top .cta[aria-current]{background:var(--g);color:#fff}
+@media (max-width:860px){
+ .top{grid-template-columns:1fr auto;row-gap:10px;padding-block:12px}
+ .top .menu{grid-column:1/-1;grid-row:2;justify-content:flex-start;overflow-x:auto;gap:20px;font-size:15px;white-space:nowrap;-webkit-overflow-scrolling:touch}
+ .top .cta{padding:10px 16px;font-size:14px}
+}
+
+/* ---- peu ---- */
+.site-foot{margin-top:clamp(72px,10vw,140px);padding:64px 0 28px}
+.fcols{display:grid;grid-template-columns:1.35fr 1fr 1fr 1fr;gap:32px}
+.flogo{font-size:24px;font-weight:500;letter-spacing:-.03em}
+.fabout p{margin-top:22px;color:#5b6474;line-height:1.6;max-width:22em}
+.fh{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#5b6474;margin-bottom:14px}
+.site-foot ul li{margin-bottom:12px}
+.site-foot a:hover{color:var(--g)}
+.fwm{text-align:center;font-weight:500;font-size:clamp(88px,19vw,300px);line-height:1;letter-spacing:-.045em;margin:clamp(40px,7vw,90px) 0 clamp(24px,4vw,48px)}
+.flegal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;border-top:1px solid #e3e5ea;padding-top:22px;font-size:14px;color:#5b6474}
+.flegal nav{display:flex;flex-wrap:wrap;gap:22px}
+@media (max-width:860px){.fcols{grid-template-columns:1fr 1fr}.fabout{grid-column:1/-1}}
+@media (max-width:480px){.fcols{grid-template-columns:1fr}}
+/* menú: ajustos */
+.top .logo{font-weight:500}
+@media (max-width:860px){.top .menu{flex-wrap:nowrap}}
+
+/* ---- portada centrada ---- */
+.hero{text-align:center}
+.hero .giant{margin-left:0}
+.hero .lede{font-size:clamp(26px,3.6vw,52px);line-height:1.15;letter-spacing:-.02em;max-width:none;margin:clamp(20px,3vw,36px) auto 0}
+
+/* ---- menú compacte + hamburguesa ---- */
+.top .menu,.top .cta{transition:opacity .25s}
+.burger{display:none;justify-self:end;grid-column:3;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative;padding:0}
+.burger span{position:absolute;left:10px;right:10px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s}
+.burger span:nth-child(1){top:14px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:28px}
+body.compact .top .menu,body.compact .top .cta{display:none}
+body.compact .burger{display:block}
+body.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+body.open .burger span:nth-child(2){opacity:0}
+body.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.drawer{position:fixed;inset:0;z-index:4;background:#fff;padding:calc(env(safe-area-inset-top,0px) + 110px) var(--m) 40px;overflow-y:auto}
+.drawer nav{display:flex;flex-direction:column;gap:6px}
+.drawer nav a{font-weight:700;font-size:clamp(34px,7vw,72px);line-height:1.05;letter-spacing:-.04em;border-top:1px solid var(--line);padding-top:8px}
+.drawer nav a[aria-current],.drawer nav a:hover{color:var(--g)}
+.drawer .dcta{margin-top:24px;align-self:flex-start;border:0!important;background:#191919;color:#fff!important;font-size:18px!important;letter-spacing:0!important;padding:14px 24px!important;border-radius:999px}
+body.open{overflow:hidden}
+@media (max-width:860px){.top{grid-template-columns:1fr auto}.burger{grid-column:2}body .top .menu,body .top .cta{display:none}body .burger{display:block}}
+@media (prefers-reduced-motion:reduce){.burger span,.top .menu,.top .cta{transition:none}}
+
+/* línia del menú: només després de passar la portada */
+.top{transition:border-color .25s}
+body.compact .top{border-bottom-color:transparent}
+
+/* menú obert: més aire i "Treballem junts" com un element més */
+.drawer{padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
+.drawer nav{gap:0}
+.drawer nav a{padding:18px 0 22px;line-height:1}
+.drawer nav a:last-child{border-bottom:1px solid var(--line)}
+.drawer .dcta{margin-top:0;align-self:stretch;background:none!important;color:var(--g)!important;font-size:clamp(34px,7vw,72px)!important;letter-spacing:-.04em!important;padding:18px 0 22px!important;border-radius:0;border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+.drawer .dcta:hover{color:var(--r)!important}
+
+.mbr{display:none}
+@media (max-width:600px){.mbr{display:inline}}
+
+.site-foot{border-top:2px solid var(--line)}
+
+/* ---- projectes propis ---- */
+.kg{color:var(--g)}.kb{color:var(--b)}.kr{color:var(--r)}.ky{color:var(--y)}
+.owngrid{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;gap:clamp(16px,2vw,28px);align-items:start}
+.ownhead .m{margin-bottom:14px}
+.multi{font-weight:400;font-size:clamp(40px,4.6vw,72px);line-height:1.02;letter-spacing:-.035em}
+.pimg{aspect-ratio:2/3;overflow:hidden;background:#eef0f3}
+.pimg img{width:100%;height:100%;object-fit:cover}
+.pcard figcaption{margin-top:10px}
+.pcard b{display:block;font-size:18px;letter-spacing:-.01em}
+.pcard span{display:block;font-size:14px;color:var(--mute);line-height:1.4;margin-top:4px}
+@media (max-width:900px){.owngrid{grid-template-columns:1fr 1fr 1fr}.ownhead{grid-column:1/-1;margin-bottom:8px}}
+@media (max-width:560px){.owngrid{grid-template-columns:1fr}}
+/* ---- logos ---- */
+.thx{text-align:center;font-size:clamp(20px,2.2vw,28px);letter-spacing:-.01em;margin:8px 0 clamp(28px,4vw,48px)}
+.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(24px,3vw,44px) clamp(16px,2vw,32px);align-items:center;justify-items:center}
+.logos img{max-height:64px;max-width:100%;width:auto;object-fit:contain}
+@media (max-width:900px){.logos{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:560px){.logos{grid-template-columns:repeat(3,1fr)}.logos img{max-height:48px}}
+
+.pimg.ai{position:relative;background:#eef0f3}
+.pimg.ai i{position:absolute;width:78%;aspect-ratio:1;border-radius:50%;background:var(--b);right:-22%;bottom:14%}
+
+/* ---- escala més continguda i més aire ---- */
+body{font-size:16px;line-height:1.6}
+.top,main,.site-foot{max-width:1240px;margin-inline:auto!important}
+.top .logo{font-size:22px}
+.top .menu{font-size:15px;gap:28px}
+.top .cta{font-size:14px;padding:10px 20px}
+.giant{font-size:clamp(64px,17vw,240px)}
+.hero{padding-block:clamp(56px,9vw,130px) clamp(48px,7vw,100px)}
+.hero .lede{font-size:clamp(20px,2.6vw,36px)}
+.lede{font-size:clamp(18px,1.9vw,24px)}
+.pt{padding-block:clamp(56px,8vw,120px) clamp(32px,5vw,64px)}
+.pt h1{font-size:clamp(32px,5vw,68px)}
+.s{padding-block:clamp(64px,8vw,120px) 0}
+.h{margin-bottom:clamp(28px,3vw,44px);font-size:11px}
+.big{font-size:clamp(20px,2.2vw,30px);line-height:1.18}
+.two{gap:clamp(24px,5vw,80px)}
+.three{gap:clamp(24px,4vw,56px)}
+.pil .word{font-size:clamp(36px,5.6vw,84px);margin:18px 0 22px}
+.pil .intro{font-size:clamp(16px,1.4vw,19px)}
+.plist li{padding:11px 0 13px;font-size:15px}
+.cards{gap:clamp(40px,4vw,64px) clamp(20px,2.4vw,36px)}
+.card h3{font-size:16px;margin-top:12px}
+.card p{font-size:12.5px}
+.owngrid{gap:clamp(20px,2.4vw,36px)}
+.multi{font-size:clamp(32px,3.6vw,54px)}
+.pcard b{font-size:16px}
+.pcard span{font-size:13px}
+.next{font-size:clamp(24px,3.6vw,46px)}
+.rows li,.svc b{font-size:clamp(16px,1.5vw,20px)}
+.thx{font-size:clamp(18px,1.8vw,24px)}
+.logos img{max-height:54px}
+.logos{gap:clamp(32px,4vw,56px) clamp(20px,3vw,44px)}
+.fwm{font-size:clamp(64px,15vw,210px)}
+.drawer nav a{font-size:clamp(30px,5.5vw,56px)}
+.drawer .dcta{font-size:clamp(30px,5.5vw,56px)!important}
+
+/* ---- punt mitjà d'escala + pes medium en lloc de bold ---- */
+body{font-size:17px}
+.top,main,.site-foot{max-width:1360px}
+.top .logo{font-size:23px}
+.top .menu{font-size:15.5px}
+.top .cta{font-size:14.5px;padding:11px 21px}
+.giant{font-size:clamp(70px,20vw,310px)}
+.hero .lede{font-size:clamp(22px,3vw,44px)}
+.lede{font-size:clamp(19px,2.1vw,27px)}
+.pt h1{font-size:clamp(36px,6vw,84px)}
+.big{font-size:clamp(22px,2.6vw,35px)}
+.pil .word{font-size:clamp(40px,6.8vw,104px)}
+.pil .intro{font-size:clamp(17px,1.5vw,20px)}
+.plist li{font-size:16px}
+.card h3{font-size:17px}
+.card p{font-size:13px}
+.multi{font-size:clamp(36px,4.1vw,62px)}
+.pcard b{font-size:17px}
+.pcard span{font-size:13.5px}
+.next{font-size:clamp(26px,4.3vw,56px)}
+.rows li,.svc b{font-size:clamp(17px,1.65vw,22px)}
+.thx{font-size:clamp(19px,2vw,26px)}
+.logos img{max-height:58px}
+.fwm{font-size:clamp(72px,17vw,260px)}
+.drawer nav a,.drawer .dcta{font-size:clamp(32px,6.2vw,64px)!important}
+b,strong,h1,h2,h3,.big,.pt h1,.pil .word,.next,.card h3,.pcard b,.h,.fh,.drawer nav a,.top .cta,.drawer .dcta{font-weight:500!important}
+
+/* titulars grans en regular (com el logotip); medium només en textos petits */
+.pil .word,.pt h1,.big,.next,.drawer nav a,.drawer .dcta{font-weight:400!important;letter-spacing:-.035em}
+
+
+/* portfolio: foto en color i el duotò apareix en passar el ratolí */
+.card .ph img{filter:none;mix-blend-mode:normal}
+.card:hover .ph img,.card:focus-visible .ph img{filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply}
+
+/* els nostres projectes: 4 targetes */
+.owngrid{grid-template-columns:repeat(4,1fr)}
+.ownhead{grid-column:1/-1;margin-bottom:clamp(8px,1.5vw,20px)}
+.pcard{display:block}
+a.pcard:hover b{color:var(--r)}
+.pcap{margin-top:10px}
+.pcap b{display:block;font-size:17px;font-weight:500}
+.pcap span{display:block;font-size:13.5px;color:var(--mute);line-height:1.4;margin-top:4px}
+.pimg.ai.red i{background:var(--r)}
+.pimg.ai.half i{width:86%;aspect-ratio:2/1;border-radius:999px 999px 0 0;right:7%;bottom:0}
+@media (max-width:900px){.owngrid{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.owngrid{grid-template-columns:1fr}}
+
+.allbtn{display:inline-block;margin-top:clamp(32px,4vw,56px);background:#191919;color:#fff;font-size:15px;font-weight:500;padding:13px 24px;border-radius:999px}
+.allbtn:hover{background:var(--g);color:#fff}
+
+/* els nostres projectes: títol a l'esquerra + 3 targetes */
+.owngrid{grid-template-columns:1.1fr 1fr 1fr 1fr}
+.ownhead{grid-column:auto;margin-bottom:0}
+@media (max-width:900px){.owngrid{grid-template-columns:1fr 1fr 1fr}.ownhead{grid-column:1/-1;margin-bottom:8px}}
+@media (max-width:560px){.owngrid{grid-template-columns:1fr}}
+
+.ownall{display:inline-block;margin-top:clamp(16px,2vw,24px);font-size:15px}
+
+.logos .lname{font-size:15px;font-weight:500;letter-spacing:-.01em;text-align:center;line-height:1.2;color:var(--ink);max-width:14em}
+
+/* ---- qui som ---- */
+.qs{font-size:clamp(22px,2.6vw,36px);line-height:1.25;letter-spacing:-.02em;max-width:34em;border-left:2px solid var(--line);padding-left:clamp(16px,2.5vw,36px)}
+.team .m{margin:4px 0 8px}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,48px)}
+.nums>div{border-top:2px solid var(--line);padding-top:12px}
+.nums .n{display:block;font-size:clamp(48px,6vw,92px);line-height:1;letter-spacing:-.05em;margin-bottom:10px}
+.nums>div:nth-child(1) .n{color:var(--g)}.nums>div:nth-child(2) .n{color:var(--b)}.nums>div:nth-child(3) .n{color:var(--r)}.nums>div:nth-child(4) .n{color:#c9a326}
+.nums .l{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+@media (max-width:760px){.nums{grid-template-columns:1fr 1fr}}
+
+.mve{margin-top:clamp(40px,5vw,72px);max-width:1000px}
+.mve>div{padding-top:12px}
+.mve b{font-size:13px}
+.mve p{font-size:13px;line-height:1.55;margin-top:8px;color:var(--ink)}
+
+.three.mve{grid-template-columns:repeat(4,1fr);max-width:1200px}
+@media (max-width:900px){.three.mve{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.three.mve{grid-template-columns:1fr}}
+
+.three.mve{max-width:none;width:100%}
+
+.big.why{font-size:clamp(32px,4.4vw,64px);line-height:1.04;letter-spacing:-.04em}
+
+/* ---- projectes: filtres ---- */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:clamp(32px,4vw,56px)}
+.chip{font:inherit;font-size:14px;font-weight:500;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.chip:hover{background:#eef0f3}
+.chip.on{background:#191919;border-color:#191919;color:#fff}
+.works .k{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-top:14px}
+.works h3{margin-top:4px!important;font-size:19px}
+.works .wd{font-size:14px;line-height:1.5;color:var(--ink);margin-top:6px;opacity:.85}
+.work[hidden]{display:none!important}
+.empty{color:var(--mute);margin-top:24px}
+
+.pt .lede{max-width:none}
+.pt h1{max-width:none}
+
+.dbr{display:none}
+@media (min-width:900px){.dbr{display:inline}}
+
+.pt:has(+ .pf){padding-bottom:0}
+.s.pf{padding-top:clamp(24px,3vw,40px)}
+
+/* ---- barra filtres + cercador ---- */
+.pfbar{display:flex;justify-content:space-between;align-items:center;gap:16px 24px;flex-wrap:wrap;margin-bottom:clamp(32px,4vw,56px)}
+.pfbar .filters{margin-bottom:0}
+.search input{font:inherit;font-size:14px;width:clamp(220px,24vw,320px);padding:9px 16px 9px 38px;border:1px solid var(--line);border-radius:999px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%231f3350' stroke-width='2'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='m11 11 4 4'/%3E%3C/svg%3E") no-repeat 14px center;color:var(--ink)}
+.search input:focus{outline:2px solid var(--g);outline-offset:1px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:700px){.search,.search input{width:100%}}
+
+.pfbar{flex-wrap:nowrap;justify-content:flex-start;align-items:flex-start}
+.pfbar .filters{flex:0 1 auto}
+.pfbar .search{flex:1 1 200px;min-width:200px}
+.pfbar .search input{width:100%}
+@media (max-width:900px){.pfbar{flex-wrap:wrap}.pfbar .search{flex-basis:100%}}
+
+.works .card .ph{aspect-ratio:8/5}
+
+/* ---- projectes: estil de línia ---- */
+.pfbar{border-top:2px solid var(--line);padding-top:12px;align-items:flex-end}
+.pfbar .filters{gap:6px 22px}
+.chip{border:0;border-bottom:2px solid transparent;border-radius:0;background:none;padding:4px 0;font-size:14px}
+.chip:hover{background:none;color:var(--g)}
+.chip.on{background:none;color:var(--ink);border-bottom-color:var(--ink)}
+.search input{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:4px 0 6px 26px;background-position:0 center}
+.search input:focus{outline:0;border-bottom:2px solid var(--g)}
+.works .card{border-top:1px solid var(--line);padding-top:12px}
+
+.pfbar{border-top:0;padding-top:0}
+
+.s.pf{padding-top:clamp(40px,5vw,72px)}
+
+.works .card{border-top:4px solid var(--r)}
+.works .card:has(.ph.d-blue){border-top-color:var(--b)}
+
+/* fitxa de projecte: fotos sempre en color, sense efecte */
+.pics img,.pics figure:hover img{filter:none!important;mix-blend-mode:normal!important;transition:none}
+.pics figure.d-red,.pics figure.d-blue{background:#eef0f3}
+
+.qf-pil{padding-top:clamp(8px,1.5vw,20px)}
+.pt:has(+ .qf-pil){padding-bottom:clamp(16px,2vw,28px)}
+
+.qf-pil{padding-top:clamp(24px,3vw,44px)}
+
+/* què feim: més aire als blocs de creativitat i tecnologia */
+.qf-pil .pillars{gap:clamp(40px,6vw,120px)}
+.qf-pil .pil .word{margin:24px 0 28px}
+.qf-pil .pil .intro{margin-bottom:36px;line-height:1.45}
+.qf-pil .plist li{padding:18px 0 22px}
+.qf-pil .plist li b{display:block;margin-bottom:6px}
+
+.qf-pil .plist li{padding:12px 0 14px}
+.qf-pil .plist li b{margin-bottom:3px}
+
+.plist li b{display:block;margin-bottom:2px}
+.qf-pil .plist li{padding:10px 0 12px;line-height:1.45}
+
+/* títol en negreta com a línia pròpia (fitxes i llistes) */
+.two p>b:first-child,li>b:first-child{display:block;margin-bottom:2px}
+
+.three.colab4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.three.colab4{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.three.colab4{grid-template-columns:1fr}}
+
+/* ---- com col·laborem com a secció principal ---- */
+.colsec{padding-top:clamp(96px,11vw,170px)}
+.colhead{margin-bottom:clamp(40px,5vw,72px)}
+.colhead .m{margin-bottom:18px}
+.colh{font-weight:400;font-size:clamp(36px,6vw,84px);line-height:.98;letter-spacing:-.045em;max-width:15em}
+.colhead .lede{margin-top:clamp(18px,2vw,28px);max-width:44em}
+
+.facts{margin-bottom:clamp(56px,7vw,100px)}
+.facts b{font-weight:400!important;font-size:clamp(44px,5vw,76px);line-height:1;letter-spacing:-.05em;margin-bottom:8px}
+.facts>div:nth-child(1) b{color:var(--g)}.facts>div:nth-child(2) b{color:var(--b)}.facts>div:nth-child(3) b{color:var(--r)}.facts>div:nth-child(4) b{color:#c9a326}
+.facts p{font-size:14px;color:var(--mute)}
+
+/* ---- logos en carrusel ---- */
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mtrack{display:flex;width:max-content;animation:mq 60s linear infinite}
+.marquee:hover .mtrack{animation-play-state:paused}
+.logos.mq{display:flex!important;flex-wrap:nowrap;align-items:center;gap:0;grid-template-columns:none}
+.logos.mq li{flex:0 0 auto;padding:0 clamp(28px,3.5vw,56px);display:flex;align-items:center;height:72px}
+.logos.mq img{max-height:48px;width:auto;max-width:180px}
+.logos.mq .lname{white-space:nowrap;max-width:none;font-size:15px}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mtrack{animation:none}.marquee{overflow-x:auto}}
+
+.mqtitle{font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-bottom:18px}
+
+.colsec .colhead+.mqtitle{margin-top:0}
+
+/* ---- pesos unificats ----
+   titulars grans: regular (400) · títols petits i etiquetes: medium (500) */
+h1,.colh,.multi,.pil .word,.big,.next{font-weight:400!important}
+h3,b,strong,.card h3,.pcard b,.pcap b{font-weight:500!important}
+.m,.h span,.mqtitle,.k,.fh{font-weight:500!important}
+
+/* ---- equip: foto quadrada en blanc i negre ---- */
+.tphoto{aspect-ratio:1/1;background:#e9ebef;margin-bottom:16px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.tphoto img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.tini{font-size:clamp(40px,5vw,72px);letter-spacing:-.04em;color:#b9bec8}
+.tphoto:has(img) .tini{display:none}
+
+.aka{display:block;font-weight:400;font-size:.85em;color:var(--mute);margin-top:2px}
+
+/* ---- equip compacte: foto petita a l'esquerra, text a la dreta ---- */
+.three.team>div{display:grid;grid-template-columns:clamp(72px,7vw,96px) 1fr;column-gap:18px;align-items:start;padding-top:16px}
+.three.team>div>.tphoto{grid-row:1/span 3;margin:0;aspect-ratio:1/1;width:100%}
+.three.team>div>b,.three.team>div>.m,.three.team>div>p{grid-column:2}
+.three.team .tini{font-size:clamp(20px,2vw,28px)}
+.three.team .m{margin:2px 0 6px}
+.three.team>div>p:not(.m){font-size:14px;line-height:1.5;margin-top:0}
+
+.collabsec{padding-top:clamp(28px,3vw,44px)}
+.teamlab{font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+
+/* ---- peu: crida "Treballem junts" ---- */
+.fcta{padding-bottom:clamp(48px,6vw,88px);margin-bottom:clamp(40px,5vw,64px);border-bottom:1px solid #e3e5ea}
+.fcta .m{margin-bottom:14px}
+.fcta-t{font-size:clamp(30px,4.6vw,66px);line-height:1.02;letter-spacing:-.04em;max-width:16em}
+.fcta-s{margin-top:16px;font-size:17px}
+
+.fcontact{margin-top:28px}
+.fcontact ul li{margin-bottom:8px}
+
+.fbtn{display:inline-block;margin-top:18px;background:#191919;color:#fff!important;font-size:15px;font-weight:500;padding:12px 22px;border-radius:999px}
+.fbtn:hover{background:var(--g)}
+.social{display:flex;gap:12px}
+.social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;color:var(--ink)}
+.social a:hover{background:var(--ink);color:#fff}
+
+/* ---- peu: 2 columnes + barra legal amb xarxes ---- */
+.fcols{grid-template-columns:2fr 1fr}
+.flegal{align-items:center}
+.flegal .social{margin-left:4px}
+.flegal .social a{width:36px;height:36px}
+.flegal .social svg{width:18px;height:18px}
+/* ---- transparència ---- */
+.docs{display:grid;gap:0}
+.doc{display:grid;grid-template-columns:1.2fr 2fr auto;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding:18px 0}
+.doc:last-child{border-bottom:1px solid var(--line)}
+.doc .dt{font-size:clamp(18px,1.8vw,24px);font-weight:500}
+.doc .dd{color:var(--mute)}
+.doc .dl{font-size:14px;font-weight:500}
+.doc:hover .dt,.doc:hover .dl{color:var(--g)}
+@media (max-width:700px){.doc{grid-template-columns:1fr auto}.doc .dd{grid-column:1/-1;grid-row:2}}
+
+.legal .lg{max-width:46em}
+.legal .lg p+p{margin-top:.9em}
+.legal .lg b{display:inline!important;margin:0}
+.legal .upd{color:var(--mute);font-size:14px}
+
+.ethic{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(32px,5vw,80px)}
+.ethic>div{border-top:1px solid var(--line);padding:16px 0 22px}
+.ethic b{display:block;font-size:17px;margin-bottom:6px}
+.ethic p{max-width:34em}
+@media (max-width:760px){.ethic{grid-template-columns:1fr}}
+
+.eco{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:28px}
+.eco div{border-top:2px solid var(--ink,#1f3350);padding-top:14px;display:flex;flex-direction:column;gap:6px}
+.eco .en{font-size:clamp(34px,4.4vw,64px);font-weight:400;letter-spacing:-.02em;line-height:1}
+.eco div:nth-child(1) .en{color:var(--g)}.eco div:nth-child(2) .en{color:var(--r)}.eco div:nth-child(3) .en{color:var(--b)}
+.eco .el{font-size:14px;font-weight:500;color:var(--mute)}
+.ecotxt{max-width:820px}.ecotxt p{margin:0 0 12px}
+.conv div.doc .dl{color:var(--mute)}
+@media(max-width:700px){.eco{grid-template-columns:1fr;gap:18px}}
+
+@media(min-width:701px){.conv .doc{grid-template-columns:1.2fr 2fr 150px}.conv .doc .dl{text-align:right}}
+
+/* castell playground al footer */
+.castle{display:flex;justify-content:flex-end;margin-top:clamp(48px,7vw,96px);--u:1px;overflow:hidden}
+.cbox{position:relative;width:calc(240*var(--u));height:calc(306*var(--u));margin-right:clamp(0px,4vw,60px)}
+.pc{position:absolute;display:block;opacity:0;transform:translateY(calc(-340*var(--u)))}
+.p1{left:calc(20*var(--u));bottom:0;width:calc(200*var(--u));height:calc(70*var(--u));background:var(--b)}
+.p2{left:calc(30*var(--u));bottom:calc(70*var(--u));width:calc(40*var(--u));height:calc(70*var(--u));background:var(--r)}
+.p3{left:calc(170*var(--u));bottom:calc(70*var(--u));width:calc(40*var(--u));height:calc(70*var(--u));background:var(--r)}
+.p4{left:calc(20*var(--u));bottom:calc(140*var(--u));width:calc(200*var(--u));height:calc(34*var(--u));background:var(--y)}
+.p5{left:calc(95*var(--u));bottom:calc(174*var(--u));width:calc(50*var(--u));height:calc(60*var(--u));background:var(--r)}
+.p6{left:calc(80*var(--u));bottom:calc(234*var(--u));width:calc(80*var(--u));height:calc(50*var(--u));background:var(--g);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.p7{left:calc(111*var(--u));bottom:calc(284*var(--u));width:calc(18*var(--u));height:calc(18*var(--u));background:var(--y);border-radius:50%}
+.castle.build .pc{animation:cdrop .7s cubic-bezier(.3,1.45,.5,1) forwards}
+.castle.build .p2{animation-delay:.35s}.castle.build .p3{animation-delay:.6s}.castle.build .p4{animation-delay:.9s}
+.castle.build .p5{animation-delay:1.2s}.castle.build .p6{animation-delay:1.5s}.castle.build .p7{animation-delay:1.85s}
+@keyframes cdrop{0%{opacity:0;transform:translateY(calc(-340*var(--u)))}15%{opacity:1}100%{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.castle{--u:.62px;justify-content:center}.cbox{margin-right:0}}
+@media(prefers-reduced-motion:reduce){.pc{opacity:1;transform:none}.castle.build .pc{animation:none}}
+
+.fcols.f4{grid-template-columns:1.3fr 1fr .8fr 1fr;gap:32px;align-items:end;margin-bottom:0}
+.fcols.f4>div:not(.castle){align-self:start;padding-bottom:40px}
+.fcols.f4 .fcontact{margin-top:0}
+.f4 .castle{margin-top:0;justify-content:flex-end;--u:.8px}
+.f4 .cbox{margin-right:0}
+@media(max-width:1000px){.fcols.f4{grid-template-columns:1fr 1fr}.f4 .castle{grid-column:1/-1;justify-content:center}}
+@media(max-width:700px){.fcols.f4{grid-template-columns:1fr}.fcols.f4>div:not(.castle){padding-bottom:8px}.f4 .castle{--u:.62px}}
+
+.fcols.f4{align-items:start}
+.f4 .castle{justify-content:center;align-self:center;padding:0 0 48px;margin:0}
+@media(max-width:700px){.f4 .castle{padding:24px 0 40px}}
+
+.f4 .castle{--u:.56px;align-self:start;padding:4px 0 40px}
+.fcols.f4{grid-template-columns:1.4fr 1fr 1fr .8fr}
+@media(max-width:1000px){.fcols.f4{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.fcols.f4{grid-template-columns:1fr}.f4 .castle{--u:.5px;padding:16px 0 32px}}
+
+/* ===== Refinament subtil: més lleuger, més aire ===== */
+:root{--hair:rgba(31,51,80,.28)}
+.pil{border-top-width:1px}
+.h,.site-foot{border-top-width:2px}
+.top{border-bottom-width:1px}
+.h{padding-top:10px;margin-bottom:clamp(32px,3.4vw,50px)}
+.s{padding-block:clamp(72px,9vw,136px) 0}
+.plist li,.plist li:last-child,.doc,.doc:last-child,.three>div,.ethic>div,.works .card{border-color:var(--hair)}
+.works .card{border-top-width:3px}
+.works .card{border-top-color:var(--r)}.works .card:has(.ph.d-blue){border-top-color:var(--b)}
+.pt h1{font-size:clamp(36px,5.6vw,78px)}
+.colh{font-size:clamp(34px,5.6vw,78px)}
+.pil .word{font-size:clamp(40px,6.3vw,96px)}
+.big.why{font-size:clamp(30px,4.1vw,58px)}
+.mve b{font-size:15px}.mve p{font-size:15px;line-height:1.6}
+.cta,.top .cta,.fbtn{background:var(--ink,#1f3350);font-weight:500!important}
+.cta:hover,.top .cta[aria-current],.fbtn:hover{background:var(--g)}
+
+.colsec>.colhead{border-top:2px solid var(--line);padding-top:10px}
+.colsec>.colhead>.m:first-child{margin-top:0}
+
+.pt h1{font-weight:700!important;letter-spacing:-.04em}
+
+/* Jerarquia tipogràfica: bold */
+.colh,.multi,.pil .word,.giant{font-weight:700!important;letter-spacing:-.045em}
+.card h3,.works .card h3,.pcap b,.pcard b,.next{font-weight:700!important;letter-spacing:-.015em}
+.next{letter-spacing:-.035em}
+.three b,.mve b,.colab4 b,.team b,.plist li b,.ethic b,.doc .dt,.fh+ul a{font-weight:700!important}
+.fh+ul a{font-weight:400!important}
+
+[data-route="/"] .plist li b{font-weight:500!important}
+
+.mve b{font-size:clamp(18px,1.5vw,21px)!important;line-height:1.25;letter-spacing:-.01em}
+
+.three:not(.team)>div>b{font-size:clamp(18px,1.5vw,21px)!important;line-height:1.25;letter-spacing:-.01em}
+
+/* Patró comú de títols de punts/fitxes */
+.three>div>b,.team b,.ethic b,.pcap b,.works .card h3,.card h3,[data-route="/que-fem"] .plist li b{font-size:clamp(18px,1.5vw,21px)!important;line-height:1.25!important;letter-spacing:-.01em!important;font-weight:700!important}
+.mve p{font-size:17px!important;line-height:1.6}
+
+/* Home amb les mateixes jerarquies */
+.giant{font-weight:500!important}
+.multi,.multi span{color:var(--ink)!important}
+[data-route="/"] .two .big{font-size:clamp(30px,4.1vw,58px);line-height:1.04;letter-spacing:-.04em}
+
+.site-foot .flink{display:inline-flex;align-items:baseline;gap:10px;background:none!important;color:var(--ink)!important;padding:0 0 6px;border-radius:0;border-bottom:1px solid var(--ink);font-size:17px;font-weight:500!important}
+.site-foot .flink .arr{display:inline-block;animation:arrnudge 1.6s ease-in-out infinite}
+.site-foot .flink:hover{color:var(--g)!important;border-color:var(--g)}
+.site-foot .flink:hover .arr{animation-duration:.8s}
+@keyframes arrnudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+@media(prefers-reduced-motion:reduce){.site-foot .flink .arr{animation:none}}
+
+[data-route="/"] .two .big{font-weight:700!important;letter-spacing:-.045em}
+
+.big.why{font-weight:700!important;letter-spacing:-.045em}
+
+/* Projectes: filtres més grans en dues línies */
+.pfbar{flex-direction:column;align-items:stretch;gap:clamp(20px,2.4vw,32px)}
+.pfbar .filters{gap:10px clamp(20px,2.2vw,32px)}
+.chip{font-size:clamp(17px,1.5vw,20px)!important;font-weight:500;padding:4px 0 6px}
+.pfbar .search{flex:none;width:100%;min-width:0}
+.search input{font-size:clamp(17px,1.4vw,19px);padding:6px 0 10px 30px;background-size:18px}
+
+
+/* capçalera de pàgina estàndard */
+.page>.pt:first-child{padding-top:clamp(40px,5vw,72px)!important}
+
+/* Honest.Lap */
+.lap{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px)}
+.lap>div{border-top:2px solid currentColor;padding-top:14px}
+.lap .c-green{color:var(--g)}.lap .c-red{color:var(--r)}.lap .c-blue{color:var(--b)}
+.lapl{display:block;font-size:clamp(96px,14vw,220px);font-weight:700;line-height:.85;letter-spacing:-.05em;margin:12px 0 18px}
+.lap b{display:block;font-size:clamp(18px,1.5vw,21px);font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.lap p{color:var(--ink);margin-top:8px;max-width:26em}
+.labx{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px)}
+.labx>div{border-top:1px solid var(--hair);padding-top:14px}
+.labx .k{font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:10px}
+.labx b{display:block;font-size:clamp(18px,1.5vw,21px);font-weight:700;letter-spacing:-.01em;line-height:1.25}
+.labx p{margin-top:8px}.labx .u{display:inline-block;margin-top:14px}
+.lg .flink{display:inline-flex;align-items:baseline;gap:10px;padding:0 0 6px;border-bottom:1px solid var(--ink);font-size:17px;font-weight:500}
+.lg .flink .arr{display:inline-block;animation:arrnudge 1.6s ease-in-out infinite}
+.lg .flink:hover{color:var(--g);border-color:var(--g)}
+@media(max-width:800px){.lap,.labx{grid-template-columns:1fr}.lapl{font-size:120px}}
+
+.lap4{grid-template-columns:repeat(4,1fr)}@media(max-width:1000px){.lap4{grid-template-columns:1fr 1fr}}@media(max-width:640px){.lap4{grid-template-columns:1fr}}
+
+.lg p+p .flink{margin-top:14px}
+
+.lap>div{border-top:0;padding-top:0}
+.lapl{display:flex;align-items:center;justify-content:center;width:clamp(120px,14vw,200px);aspect-ratio:1;background:currentColor;margin:0 0 22px;line-height:1;font-size:clamp(80px,9.5vw,140px)}
+.lapl::first-letter{color:#fff}
+.lap .lapl{color:inherit}
+.lap .lapl{-webkit-text-fill-color:#fff}
+
+.lapl{flex-direction:column;gap:6px;width:clamp(150px,16vw,230px);font-size:inherit}
+.lapl em{font-style:normal;font-size:clamp(76px,8.6vw,130px);font-weight:700;line-height:.9;letter-spacing:-.04em;-webkit-text-fill-color:#fff;color:#fff}
+.lap .lapl b{color:#fff;-webkit-text-fill-color:#fff;font-size:clamp(15px,1.3vw,18px);font-weight:700;letter-spacing:0}
+
+/* LAP: tot dins el quadrat */
+.lap>div{background:currentColor;aspect-ratio:1/1;padding:clamp(22px,2.4vw,36px);display:flex;flex-direction:column;justify-content:space-between}
+.lap .lapl{background:none;width:auto;aspect-ratio:auto;margin:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0}
+.lapl em{font-size:clamp(90px,11vw,170px);line-height:.8}
+.lap .lapl b{display:none}
+.lap>div p{color:#fff!important;-webkit-text-fill-color:#fff;margin:0;max-width:24em}
+.lap>div p b{display:block;font-size:clamp(18px,1.5vw,21px);font-weight:700;margin-bottom:6px;color:#fff;-webkit-text-fill-color:#fff}
+@media(max-width:800px){.lap>div{aspect-ratio:auto;min-height:320px;gap:40px}}
+
+.lap>div p{min-height:7.4em}
+
+.lapl em{font-size:clamp(120px,15vw,240px)!important;font-weight:500!important;line-height:.78!important;letter-spacing:-.05em}
+
+.lapesp{grid-template-columns:repeat(2,1fr)!important}@media(max-width:700px){.lapesp{grid-template-columns:1fr!important}}
+
+/* Formulari de contacte */
+.cform{display:grid;grid-template-columns:2fr 1fr;gap:clamp(40px,6vw,96px)}
+.form{display:grid;gap:26px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.fld{display:grid;gap:8px;border:0;padding:0;margin:0;min-width:0}
+.fld>span,.fld legend{font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);padding:0}
+.fld input,.fld textarea{font:inherit;font-size:17px;color:var(--ink);background:none;border:0;border-bottom:1px solid var(--hair);border-radius:0;padding:8px 0 10px;width:100%;resize:vertical}
+.fld textarea{border:1px solid var(--hair);padding:12px 14px}
+.fld input:focus,.fld textarea:focus{outline:0;border-color:var(--g)}
+.fld input.err,.fld textarea.err{border-color:var(--r)}
+.fchips{display:flex;flex-wrap:wrap;gap:10px 26px}
+.fchips legend{margin-bottom:12px;width:100%}
+.fchips label{cursor:pointer}
+.fchips input{position:absolute;opacity:0;pointer-events:none}
+.fchips span{display:inline-block;font-size:17px;font-weight:500;padding:4px 0 6px;border-bottom:2px solid transparent}
+.fchips input:checked+span{border-bottom-color:var(--ink)}
+.fchips input:focus-visible+span{outline:2px solid var(--g);outline-offset:2px}
+.fchips label:hover span{color:var(--g)}
+.fchk{display:flex;gap:12px;align-items:flex-start;font-size:15px}
+.fchk input{margin-top:4px;width:18px;height:18px;accent-color:var(--ink)}
+.fsend{justify-self:start;display:inline-flex;align-items:baseline;gap:10px;font:inherit;font-size:17px;font-weight:500;color:var(--ink);background:none;border:0;border-bottom:1px solid var(--ink);padding:0 0 6px;cursor:pointer}
+.fsend .arr{display:inline-block;animation:arrnudge 1.6s ease-in-out infinite}
+.fsend:hover{color:var(--g);border-color:var(--g)}
+.fsend[disabled]{opacity:.5;cursor:wait}
+.fmsg{min-height:1.5em;font-weight:500}.fmsg.ok{color:var(--g)}.fmsg.ko{color:var(--r)}
+.hp{position:absolute;left:-9999px}
+.cdata{display:grid;gap:26px;align-content:start}
+.cdata>div{border-top:1px solid var(--hair);padding-top:12px}
+.cdata .m{margin-bottom:6px}
+@media(max-width:900px){.cform{grid-template-columns:1fr}.frow{grid-template-columns:1fr}}
+
+[data-route="/contacte"] .pt+.s{padding-top:clamp(24px,3vw,40px)!important}
+
+
+.top .cta.clink{display:inline-flex;align-items:baseline;gap:10px;background:none!important;color:var(--ink)!important;border-radius:0;padding:0 0 5px!important;border-bottom:1px solid var(--ink);font-size:16px!important;font-weight:500!important}
+.top .cta.clink .arr{display:inline-block;animation:arrnudge 1.6s ease-in-out infinite}
+.top .cta.clink:hover,.top .cta.clink[aria-current]{color:var(--g)!important;border-color:var(--g)}
+
+.top .cta.clink{font-weight:700!important}
+
+/* castell doble */
+.f4 .castle{padding:0!important;align-self:center!important;display:block}
+.cbox2{position:relative;width:100%!important;height:auto!important;aspect-ratio:400/320;margin:0!important}
+.cbox2 .pc{transform:translateY(-280px)}
+.cbox2 .q1{left:0.000%;bottom:0.000%;width:100.000%;height:15.000%;background:var(--b);}
+.cbox2 .q2{left:7.500%;bottom:15.000%;width:17.500%;height:35.000%;background:var(--r);}
+.cbox2 .q3{left:75.000%;bottom:15.000%;width:17.500%;height:35.000%;background:var(--r);}
+.cbox2 .q4{left:35.000%;bottom:15.000%;width:30.000%;height:18.750%;background:var(--g);border-radius:999px 999px 0 0;}
+.cbox2 .q5{left:3.750%;bottom:50.000%;width:92.500%;height:9.375%;background:var(--y);}
+.cbox2 .q6{left:6.250%;bottom:59.375%;width:20.000%;height:18.750%;background:var(--g);clip-path:polygon(50% 0,100% 100%,0 100%);}
+.cbox2 .q7{left:73.750%;bottom:59.375%;width:20.000%;height:18.750%;background:var(--g);clip-path:polygon(50% 0,100% 100%,0 100%);}
+.cbox2 .q8{left:41.250%;bottom:59.375%;width:17.500%;height:21.875%;background:var(--b);}
+.cbox2 .q9{left:37.500%;bottom:81.250%;width:25.000%;height:16.250%;background:var(--r);clip-path:polygon(50% 0,100% 100%,0 100%);}
+.cbox2 .q10{left:14.250%;bottom:78.125%;width:4.000%;height:5.000%;background:var(--y);border-radius:50%;}
+.cbox2 .q11{left:81.750%;bottom:78.125%;width:4.000%;height:5.000%;background:var(--y);border-radius:50%;}
+.castle.build .cbox2 .pc{animation:cdrop2 .7s cubic-bezier(.3,1.45,.5,1) forwards}
+.castle.build .cbox2 .q1{animation-delay:0.00s}
+.castle.build .cbox2 .q2{animation-delay:0.22s}
+.castle.build .cbox2 .q3{animation-delay:0.44s}
+.castle.build .cbox2 .q4{animation-delay:0.66s}
+.castle.build .cbox2 .q5{animation-delay:0.88s}
+.castle.build .cbox2 .q6{animation-delay:1.10s}
+.castle.build .cbox2 .q7{animation-delay:1.32s}
+.castle.build .cbox2 .q8{animation-delay:1.54s}
+.castle.build .cbox2 .q9{animation-delay:1.76s}
+.castle.build .cbox2 .q10{animation-delay:1.98s}
+.castle.build .cbox2 .q11{animation-delay:2.20s}
+@keyframes cdrop2{0%{opacity:0;transform:translateY(-280px)}15%{opacity:1}100%{opacity:1;transform:translateY(0)}}
+@media(max-width:1000px){.f4 .castle{max-width:360px;margin:0 auto!important;width:100%}}
+@media(prefers-reduced-motion:reduce){.cbox2 .pc{opacity:1;transform:none}.castle.build .cbox2 .pc{animation:none}}
+
+.fcols.f4{align-items:stretch!important}
+.f4 .castle{align-self:stretch!important;display:flex!important;padding:0 0 40px!important;margin:0!important}
+.cbox2{flex:1;aspect-ratio:auto!important;height:auto!important;min-height:200px}
+@media(max-width:1000px){.f4 .castle{height:240px;max-width:320px}}
+
+@media(min-width:1001px){.fcols.f4{grid-template-columns:1.4fr 1fr .65fr 1.15fr!important}}
+
+.cbox2 .q4,.cbox2 .q10,.cbox2 .q11{height:auto!important}
+.cbox2 .q4{aspect-ratio:2/1;width:24%!important;left:38%!important}
+.cbox2 .q10,.cbox2 .q11{aspect-ratio:1/1;width:3.2%!important}
+.cbox2 .q10{left:13.3%!important}.cbox2 .q11{left:83.5%!important}
+
+/* joc de construcció */
+.f4 .castle{align-self:center!important;padding:0 0 40px!important}
+.cbox3{position:relative;flex:none!important;width:100%;aspect-ratio:420/240;margin:0!important;min-height:0}
+.cbox3 .pc{transform:translateY(-260px)}
+.cbox3 .k1{left:2.381%;bottom:0.000%;width:8.571%;height:45.833%;background:var(--b);border-radius:48% 48% 6% 6%/16% 16% 3% 3%;}
+.cbox3 .k2{left:1.429%;bottom:43.333%;width:10.476%;height:18.333%;background:var(--r);border-radius:50%;}
+.cbox3 .k3{left:16.667%;bottom:0.000%;width:10.952%;height:19.167%;background:var(--g);}
+.cbox3 .k4{left:40.476%;bottom:0.000%;width:10.952%;height:19.167%;background:var(--g);}
+.cbox3 .k5{left:16.667%;bottom:19.167%;width:10.952%;height:19.167%;background:var(--y);}
+.cbox3 .k6{left:40.476%;bottom:19.167%;width:10.952%;height:19.167%;background:var(--y);}
+.cbox3 .k7{left:14.762%;bottom:38.333%;width:38.571%;height:19.167%;background:var(--r);}
+.cbox3 .k8{left:28.095%;bottom:57.500%;width:11.905%;height:20.833%;background:var(--b);}
+.cbox3 .k9{left:60.714%;bottom:0.000%;width:11.905%;height:20.833%;background:var(--r);}
+.cbox3 .k10{left:60.714%;bottom:20.833%;width:11.905%;height:20.833%;background:var(--b);}
+.cbox3 .k11{left:60.714%;bottom:41.667%;width:11.905%;height:20.833%;background:var(--r);}
+.cbox3 .k12{left:58.333%;bottom:62.500%;width:16.667%;height:25.000%;background:var(--y);clip-path:polygon(50% 0,100% 100%,0 100%);}
+.cbox3 .k13{left:79.762%;bottom:0.000%;width:17.143%;height:20.833%;background:var(--g);clip-path:polygon(50% 0,100% 38%,82% 100%,18% 100%,0 38%);}
+.cbox3 .k14{left:84.048%;bottom:20.000%;width:8.571%;height:21.667%;background:var(--y);clip-path:polygon(50% 0,100% 100%,0 100%);}
+.castle.build .cbox3 .pc{animation:cdrop3 .7s cubic-bezier(.3,1.45,.5,1) forwards}
+.castle.build .cbox3 .k1{animation-delay:0.00s}
+.castle.build .cbox3 .k2{animation-delay:0.18s}
+.castle.build .cbox3 .k3{animation-delay:0.36s}
+.castle.build .cbox3 .k4{animation-delay:0.54s}
+.castle.build .cbox3 .k5{animation-delay:0.72s}
+.castle.build .cbox3 .k6{animation-delay:0.90s}
+.castle.build .cbox3 .k7{animation-delay:1.08s}
+.castle.build .cbox3 .k8{animation-delay:1.26s}
+.castle.build .cbox3 .k9{animation-delay:1.44s}
+.castle.build .cbox3 .k10{animation-delay:1.62s}
+.castle.build .cbox3 .k11{animation-delay:1.80s}
+.castle.build .cbox3 .k12{animation-delay:1.98s}
+.castle.build .cbox3 .k13{animation-delay:2.16s}
+.castle.build .cbox3 .k14{animation-delay:2.34s}
+@keyframes cdrop3{0%{opacity:0;transform:translateY(-260px)}15%{opacity:1}100%{opacity:1;transform:translateY(0)}}
+@media(max-width:1000px){.f4 .castle{height:auto!important;max-width:380px}}
+@media(prefers-reduced-motion:reduce){.cbox3 .pc{opacity:1;transform:none}.castle.build .cbox3 .pc{animation:none}}
+
+.cbox3{height:auto!important;width:100%!important}
+
+/* joc de construcció aleatori */
+.cbox3 .pc.sh-tri{clip-path:polygon(50% 0,100% 100%,0 100%)}
+.cbox3 .pc.sh-ball{border-radius:50%}
+.cbox3 .pc.sh-semi{border-radius:999px 999px 0 0}
+.cbox3 .pc.sh-pent{clip-path:polygon(50% 0,100% 38%,82% 100%,18% 100%,0 38%)}
+.cbox3 .pc.sh-hex{clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
+.cbox3 .pc.sh-cyl{border-radius:10% 10% 6% 6%/6% 6% 4% 4%}
+.cbox3 .pc.sh-pawn{border-radius:48% 48% 6% 6%/16% 16% 3% 3%}
+.cbox3 .pc.sh-arch{-webkit-mask:radial-gradient(circle at 50% 100%,transparent 34%,#000 35%);mask:radial-gradient(circle at 50% 100%,transparent 34%,#000 35%)}
+
+.homeqf{padding-top:clamp(72px,9vw,136px)!important}
+
+.castle .cbox3{transition:opacity .4s}.castle.fading .cbox3{opacity:0}
+
+.drawer .dcta{align-self:flex-start!important;margin-top:28px!important;background:var(--g)!important;color:#fff!important;border:0!important;border-radius:999px!important;padding:14px 30px 16px!important;font-size:clamp(22px,4.2vw,34px)!important;font-weight:700!important;letter-spacing:-.02em!important}
+.drawer .dcta:hover{background:var(--ink)!important;color:#fff!important}
+
+.drawer .dcta{align-self:stretch!important;margin-top:0!important;border-radius:0!important;padding:18px 20px 22px!important;font-size:clamp(32px,6.2vw,64px)!important;font-weight:400!important;letter-spacing:-.035em!important;background:var(--g)!important;color:#fff!important;border:0!important}
+.drawer .dcta:hover{background:var(--ink)!important}
+
+.fsupport{margin-top:28px}
+.fsupport .fh{margin-bottom:12px}
+.fsupport img{display:block;width:150px;height:auto}
+.subv .doc .dl{color:var(--mute)}
+@media(min-width:701px){.subv .doc{grid-template-columns:1.2fr 2fr 150px}.subv .doc .dl{text-align:right}}
+
+.fsupport{display:flex;align-items:center;gap:16px}.fsupport .fh{margin:0!important}.fsupport img{width:96px!important}
+
+.page[data-route^="/projectes/"] .pt .lede{max-width:34em!important;text-wrap:pretty}
+
+/* enllaços de projecte */
+.plinks{display:flex;flex-wrap:wrap;gap:14px 40px}
+.plink{display:inline-flex;align-items:baseline;gap:10px;font-size:clamp(17px,1.5vw,20px);font-weight:700;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:6px}
+.plink .arr{display:inline-block;transition:transform .25s}
+.plink:hover{color:var(--g);border-color:var(--g)}
+.plink:hover .arr{transform:translate(3px,-3px)}
+</style>
+</head>
+<body>
+
+<header class="top"><a class="logo" href="#/"><span class="L1">H</span><span class="L2">o</span><span class="L3">n</span><span class="L4">e</span><span class="L5">s</span><span class="L6">t</span></a><nav class="menu" aria-label="Principal"><a href="#/" data-nav="/">Inici</a><a href="#/qui-som" data-nav="/qui-som">Qui som</a><a href="#/que-fem" data-nav="/que-fem">Què feim</a><a href="#/projectes" data-nav="/projectes">Projectes</a><a href="#/honest-lap" data-nav="/honest-lap">Honest.Lap</a></nav><a class="cta clink" href="#/contacte" data-nav="/contacte"><span>Col·laboram?</span><span class="arr" aria-hidden="true">→</span></a><button class="burger" type="button" aria-label="Obrir el menú" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></header>
+<div class="drawer" id="drawer" hidden><nav aria-label="Menú"><a href="#/" data-nav="/">Inici</a><a href="#/qui-som" data-nav="/qui-som">Qui som</a><a href="#/que-fem" data-nav="/que-fem">Què feim</a><a href="#/projectes" data-nav="/projectes">Projectes</a><a href="#/honest-lap" data-nav="/honest-lap">Honest.Lap</a><a class="dcta" href="#/contacte" data-nav="/contacte">Col·laboram? →</a></nav></div><main><div class="page" data-route="/" data-title="Honest PG">
+<section class="hero"><h1 class="giant" aria-label="Honest"><span class="L1">H</span><span class="L2">o</span><span class="L3">n</span><span class="L4">e</span><span class="L5">s</span><span class="L6">t</span></h1><p class="lede"><span class="c-red">Creativitat</span> i <span class="c-blue">tecnologia</span><br class="mbr"> per al tercer sector.</p></section>
+<section class="s"><div class="h"><span>Qui ajuda els qui ajuden?</span><span><a class="u" href="#/qui-som">Qui som</a></span></div><div class="two"><p class="big">A Honest creiem que la creativitat i la tecnologia són un motor per a la transformació social.</p>
+<p>Som un estudi creatiu sense ànim de lucre de Palma. Ajudem entitats del tercer sector a desenvolupar projectes on la creativitat i la tecnologia es posen al servei de les persones. Moltes associacions, fundacions i cooperatives fan una feina d’alt impacte social, cultural o ambiental, però el seu relat no sempre arriba amb la força que mereix. Nosaltres hi posem el que sovint queda per al final: el disseny, la comunicació i les eines digitals.</p></div></section>
+<section class="s own"><div class="h"><span>Projectes propis</span><span></span></div><div class="owngrid"><div class="ownhead"><p class="m">Apoderant les persones</p><h2 class="multi"><span class="kg">E</span><span class="kb">l</span><span class="kr">s</span> <span class="ky">n</span><span class="kg">o</span><span class="kr">s</span><span class="kg">t</span><span class="kb">r</span><span class="kr">e</span><span class="ky">s</span><br><span class="kg">p</span><span class="kb">r</span><span class="kr">o</span><span class="ky">j</span><span class="kg">e</span><span class="kr">c</span><span class="kg">t</span><span class="kb">e</span><span class="kr">s</span></h2><a class="u ownall" href="#/projectes">Veure tots els projectes</a></div><a class="pcard" href="#/projectes/balcons-per-palestina"><div class="pimg"><img src="img/balcons-1.jpg" alt="Taller de confecció de banderes" loading="lazy"></div><p class="pcap"><b>Balcons per Palestina</b><span>Campanya de solidaritat amb Balcons per la Pau.</span></p></a><a class="pcard" href="#/projectes/creativitats-que-sumen"><div class="pimg"><img src="img/creativitats-2.jpg" alt="Mural col·lectiu amb la Fundación Aldaba" loading="lazy"></div><p class="pcap"><b>Creativitats que (+) sumen</b><span>Jornada creativa amb la Fundación Aldaba.</span></p></a><a class="pcard" href="#/projectes/fundacio-tutelar-dema"><div class="pimg ai half" aria-hidden="true"><i></i></div><p class="pcap"><b>Pàgina web Fundació Tutelar Demà</b><span>Nova web i identitat digital per a una fundació tutelar.</span></p></a></div></section>
+<section class="s colsec homeqf"><div class="colhead"><p class="m">Què feim</p><h2 class="colh">Desenvolupem projectes<br> amb les entitats.</h2><p class="lede">No donam serveis: col·laboram. Treballem amb associacions, fundacions i cooperatives<br class="dbr"> per ordenar, estructurar i amplificar el seu relat.</p></div><div class="pillars"><div class="pil"><h2 class="word c-red">Creativitat</h2><p class="intro">L’art i la creativitat com a motor de transformació social. Cobrim la bretxa entre el sector creatiu i el tercer sector.</p><ul class="plist"><li><b>Relat, marca i identitat</b></li><li><b>Campanyes socials i publicitat</b></li><li><b>Disseny gràfic, editorial i multimèdia</b></li><li><b>Projectes d’art i cultura</b></li></ul></div><div class="pil"><h2 class="word c-blue">Tecnologia</h2><p class="intro">La tecnologia al servei de les persones i de les entitats. Implementació de la intel·ligència artificial al tercer sector.</p><ul class="plist"><li><b>Intel·ligència artificial</b></li><li><b>Webs i eines digitals</b></li><li><b>Formació i apoderament digital</b></li><li><b>Desenvolupament de programari a mida</b></li></ul></div></div></section><section class="s thanks"><div class="h"><span>Amb qui hem treballat</span><span></span></div><div class="marquee" aria-label="Entitats amb qui hem treballat"><div class="mtrack"><ul class="logos mq"><li><img src="img/entitats/mater.png" alt="Mater" loading="lazy"></li><li><img src="img/entitats/fim.png" alt="Fundació Iniciatives del Mediterrani" loading="lazy"></li><li><img src="img/entitats/dema.png" alt="Fundació Tutelar Demà" loading="lazy"></li><li><img src="img/entitats/egl.png" alt="Estudi General Lul·lià" loading="lazy"></li><li><img src="img/entitats/aldaba.png" alt="Fundación Aldaba" loading="lazy"></li><li><img src="img/entitats/academia.png" alt="Acadèmia del Clima" loading="lazy"></li><li><img src="img/entitats/cancosta.png" alt="Can Costa" loading="lazy"></li><li class="lname">Fundación Nadine</li><li><img src="img/entitats/enderrock.png" alt="Enderrock" loading="lazy"></li><li class="lname">Ajuntament de Campos</li><li><img src="img/entitats/tramuntana.png" alt="Tramuntana XXI" loading="lazy"></li><li><img src="img/entitats/palmaxxi.png" alt="Palma XXI" loading="lazy"></li><li><img src="img/entitats/pla.png" alt="Pla de Mallorca XXI" loading="lazy"></li><li><img src="img/entitats/dbalears.png" alt="dBalears" loading="lazy"></li><li class="lname">Cooperativa NOMA</li><li><img src="img/entitats/ona.png" alt="Ona Mediterrània" loading="lazy"></li><li><img src="img/entitats/santanyi.png" alt="Ajuntament de Santanyí" loading="lazy"></li><li class="lname">Ajuntament de Marratxí</li><li><img src="img/entitats/palma.png" alt="Ajuntament de Palma" loading="lazy"></li><li class="lname">Associació Memòria de Mallorca</li><li class="lname">Àgora Portals</li></ul><ul class="logos mq" aria-hidden="true"><li><img src="img/entitats/mater.png" alt="Mater" loading="lazy"></li><li><img src="img/entitats/fim.png" alt="Fundació Iniciatives del Mediterrani" loading="lazy"></li><li><img src="img/entitats/dema.png" alt="Fundació Tutelar Demà" loading="lazy"></li><li><img src="img/entitats/egl.png" alt="Estudi General Lul·lià" loading="lazy"></li><li><img src="img/entitats/aldaba.png" alt="Fundación Aldaba" loading="lazy"></li><li><img src="img/entitats/academia.png" alt="Acadèmia del Clima" loading="lazy"></li><li><img src="img/entitats/cancosta.png" alt="Can Costa" loading="lazy"></li><li class="lname">Fundación Nadine</li><li><img src="img/entitats/enderrock.png" alt="Enderrock" loading="lazy"></li><li class="lname">Ajuntament de Campos</li><li><img src="img/entitats/tramuntana.png" alt="Tramuntana XXI" loading="lazy"></li><li><img src="img/entitats/palmaxxi.png" alt="Palma XXI" loading="lazy"></li><li><img src="img/entitats/pla.png" alt="Pla de Mallorca XXI" loading="lazy"></li><li><img src="img/entitats/dbalears.png" alt="dBalears" loading="lazy"></li><li class="lname">Cooperativa NOMA</li><li><img src="img/entitats/ona.png" alt="Ona Mediterrània" loading="lazy"></li><li><img src="img/entitats/santanyi.png" alt="Ajuntament de Santanyí" loading="lazy"></li><li class="lname">Ajuntament de Marratxí</li><li><img src="img/entitats/palma.png" alt="Ajuntament de Palma" loading="lazy"></li><li class="lname">Associació Memòria de Mallorca</li><li class="lname">Àgora Portals</li></ul></div></div></section></div><div class="page" data-route="/qui-som" data-title="Qui som · Honest" hidden><section class="pt"><p class="m">Estudi creatiu sense ànim de lucre</p><h1>Qui ajuda els qui ajuden?</h1><p class="lede">Unim la indústria creativa i tecnològica amb el tercer sector. Posem el disseny, el desenvolupament tecnològic i la intel·ligència artificial al servei de les entitats que transformen el seu entorn, perquè la seva feina i el seu impacte tinguin el suport que mereixen.</p><div class="three mve"><div><b>Creativitat i tecnologia com a motor</b><p>Fer de la creativitat i la tecnologia el motor de la transformació social, i donar a cada causa un relat a l’altura del seu impacte.</p></div><div><b>Projectes innovadors i transformadors</b><p>No volem ser els més grans, sinó fer les coses ben fetes: impulsar projectes innovadors que transformin el seu entorn.</p></div><div><b>L’honestedat, per davant</b><p>Honestedat i integritat, abans que res. Només et proposarem allò que de veritat necessites, parlem clar i som transparents en cada pas.</p></div><div><b>Apropant sectors</b><p>Tanquem la bretxa entre el sector creatiu i tecnològic i el tercer sector, perquè el talent i les eines arribin també a qui treballa pel bé comú.</p></div></div></section>
+<section class="s"><div class="h"><span>El perquè de tot això?</span><span></span></div><div class="two"><p class="big why">El sector que més fa per la societat és el que menys recursos pot dedicar a la creativitat i la tecnologia.</p><div><p>Associacions, fundacions i cooperatives sostenen una feina imprescindible, però rarament disposen del pressupost per accedir a sectors altament especialitzats com el disseny, la comunicació o el desenvolupament tecnològic.</p><p>Tenen projectes d’altíssim impacte, però una mancança estructural en com els comuniquen i en les eines amb què treballen: els recursos sempre van al que sembla més urgent, i la creativitat i la tecnologia queden per al final.</p><p>Per això a Honest desenvolupem metodologies, eines i iniciatives que porten aquest coneixement especialitzat a les entitats, per potenciar el seu impacte i la seva feina.</p><p>Posem justament allò que no sempre es poden permetre: del relat a la plataforma digital. I posem la intel·ligència artificial al seu servei perquè les entitats automatitzin el que és tediós i facin més amb menys.</p></div></div></section>
+
+
+<section class="s colsec"><div class="colhead"><p class="m">L’equip</p><h2 class="colh">Persones que<br> sumen.</h2><p class="lede">Un equip petit de socis i una xarxa de col·laboradors que aporten mirades diferents: social, tecnològica, creativa i científica.</p></div><p class="teamlab">Socis</p><div class="three team"><div><figure class="tphoto"><span class="tini" aria-hidden="true">AR</span><!-- foto: img/equip/ar.jpg --></figure><b>Auba Rosselló Daureo</b><p class="m">Treballadora social</p><p>Aporta el coneixement estructural del tercer sector: entén els ritmes, les necessitats i les realitats de les entitats amb què treballem.</p></div><div><figure class="tphoto"><span class="tini" aria-hidden="true">RL</span><!-- foto: img/equip/rl.jpg --></figure><b>Rafel Llobet Deià</b><p class="m">Desenvolupament i tecnologia</p><p>Informàtic. Construeix l’estructura digital i tecnològica de cada projecte: webs, eines i plataformes que funcionen de veritat.</p></div><div><figure class="tphoto"><span class="tini" aria-hidden="true">MB</span><!-- foto: img/equip/mb.jpg --></figure><b>Manuel Bauzà Ramis</b><p class="m">Direcció creativa i estratègica</p><p>Disseny, creativitat, màrqueting i comunicació. Tradueix les causes en un llenguatge visual i estratègic que mou les persones.</p></div></div></section>
+<section class="s collabsec"><p class="teamlab">Col·laboradors externs</p><div class="three team collab"><div><figure class="tphoto"><span class="tini" aria-hidden="true">JR</span></figure><b>Joana Revol Barber</b><p class="m">Audiovisual i vídeo</p><p>Dona forma audiovisual als projectes: rodatge, edició i peces de vídeo que expliquen amb imatges la feina de les entitats.</p></div><div><figure class="tphoto"><span class="tini" aria-hidden="true">E</span></figure><b>Esperanza</b><p class="m">Científica · Doctora en física</p><p>Aporta rigor científic i mirada analítica: ajuda a traduir dades i coneixement complex en projectes clars i ben fonamentats.</p></div><div><figure class="tphoto"><span class="tini" aria-hidden="true">RF</span></figure><b>Rafael Fuster <span class="aka">Margarito de la Guetto</span></b><p class="m">Educador social i fotògraf</p><p>Uneix la fotografia i l’educació social per acostar la creació a les persones, a través de tallers i projectes comunitaris.</p></div></div></section>
+
+</div><div class="page" data-route="/que-fem" data-title="Què feim · Honest" hidden><section class="pt"><p class="m">Creativitat i tecnologia</p><h1>Desenvolupem projectes amb les entitats.</h1><p class="lede">No donam serveis: col·laboram. Treballem amb associacions, fundacions i cooperatives<br class="dbr"> per ordenar, estructurar i amplificar el seu relat.</p></section>
+<section class="s qf-pil"><div class="pillars"><div class="pil"><h2 class="word c-red">Creativitat</h2><p class="intro">L’art i la creativitat com a motor de transformació social. Cobrim la bretxa entre el sector creatiu i el tercer sector.</p><ul class="plist"><li><b>Relat, marca i identitat</b>Acompanyem entitats a ordenar el seu relat i donar-li forma: marca, identitat, to i missatge.</li><li><b>Campanyes socials i publicitat</b>Campanyes de sensibilització, de carrer i publicitat, com Balcons per Palestina.</li><li><b>Disseny gràfic, editorial i multimèdia</b>Gràfica, revistes, memòries i peces audiovisuals, com el redisseny de la revista L’Estel.</li><li><b>Projectes d’art i cultura</b>Festivals, instal·lacions, residències artístiques i espais de creació.</li></ul></div><div class="pil"><h2 class="word c-blue">Tecnologia</h2><p class="intro">La tecnologia al servei de les persones i de les entitats. Implementació de la intel·ligència artificial al tercer sector.</p><ul class="plist"><li><b>Intel·ligència artificial</b>Desenvolupem eines d’IA perquè les entitats facin més amb menys, com un assistent per redactar memòries i justificar subvencions.</li><li><b>Webs i eines digitals</b>Webs i plataformes accessibles per a associacions, fundacions i cooperatives.</li><li><b>Formació i apoderament digital</b>Tallers en competències digitals i comunicatives per a entitats, voluntariat i ciutadania.</li><li><b>Desenvolupament de programari a mida</b>Eines i aplicacions fetes a mida per a les necessitats de cada entitat.</li></ul></div></div></section>
+<section class="s colsec"><div class="colhead"><p class="m">Com ho feim</p><h2 class="colh">La cooperació és la nostra<br> manera de fer.</h2><p class="lede">No treballem per a les entitats, treballem amb elles. Creiem en les sinergies: quan el coneixement del tercer sector i el de la indústria creativa i tecnològica es troben, l’impacte es multiplica. Per això construïm relacions de cooperació estables, on cada part aporta el que sap fer millor.</p></div><div class="three colab4"><div><b>Convenis de col·laboració</b><p>Aliances estables amb cooperatives i entitats que van més enllà del marc administratiu i esdevenen processos reals de cooperació.</p></div><div><b>Projectes compartits</b><p>Desenvolupem plegats projectes socials, culturals i digitals: de la idea a la posada en marxa.</p></div><div><b>Formació i voluntariat</b><p>Tallers, taller ocupacional i voluntariat: creativitat i acció comunitària amb les persones al centre.</p></div><div><b>Encàrrecs</b><p>Projectes concrets amb un objectiu clar: una web, una identitat, una campanya o una eina digital, fets a mida per a cada entitat.</p></div></div></section>
+<section class="s colsec"><div class="colhead"><p class="m">Amb qui treballam</p><h2 class="colh">Una xarxa que creix<br> projecte a projecte.</h2><p class="lede">El 2025 hem desenvolupat 15 projectes i hem formalitzat 3 convenis de col·laboració amb cooperatives i entitats. Hem treballat amb fundacions, associacions, ajuntaments, mitjans de comunicació i festivals, ampliant l’abast territorial i sectorial de l’associació.</p></div>
+<p class="mqtitle">Entitats amb les quals hem cooperat</p><div class="marquee" aria-label="Entitats amb qui hem treballat"><div class="mtrack"><ul class="logos mq"><li><img src="img/entitats/mater.png" alt="Mater" loading="lazy"></li><li><img src="img/entitats/fim.png" alt="Fundació Iniciatives del Mediterrani" loading="lazy"></li><li><img src="img/entitats/dema.png" alt="Fundació Tutelar Demà" loading="lazy"></li><li><img src="img/entitats/egl.png" alt="Estudi General Lul·lià" loading="lazy"></li><li><img src="img/entitats/aldaba.png" alt="Fundación Aldaba" loading="lazy"></li><li><img src="img/entitats/academia.png" alt="Acadèmia del Clima" loading="lazy"></li><li><img src="img/entitats/cancosta.png" alt="Can Costa" loading="lazy"></li><li class="lname">Fundación Nadine</li><li><img src="img/entitats/enderrock.png" alt="Enderrock" loading="lazy"></li><li class="lname">Ajuntament de Campos</li><li><img src="img/entitats/tramuntana.png" alt="Tramuntana XXI" loading="lazy"></li><li><img src="img/entitats/palmaxxi.png" alt="Palma XXI" loading="lazy"></li><li><img src="img/entitats/pla.png" alt="Pla de Mallorca XXI" loading="lazy"></li><li><img src="img/entitats/dbalears.png" alt="dBalears" loading="lazy"></li><li class="lname">Cooperativa NOMA</li><li><img src="img/entitats/ona.png" alt="Ona Mediterrània" loading="lazy"></li><li><img src="img/entitats/santanyi.png" alt="Ajuntament de Santanyí" loading="lazy"></li><li class="lname">Ajuntament de Marratxí</li><li><img src="img/entitats/palma.png" alt="Ajuntament de Palma" loading="lazy"></li><li class="lname">Associació Memòria de Mallorca</li><li class="lname">Àgora Portals</li></ul><ul class="logos mq" aria-hidden="true"><li><img src="img/entitats/mater.png" alt="Mater" loading="lazy"></li><li><img src="img/entitats/fim.png" alt="Fundació Iniciatives del Mediterrani" loading="lazy"></li><li><img src="img/entitats/dema.png" alt="Fundació Tutelar Demà" loading="lazy"></li><li><img src="img/entitats/egl.png" alt="Estudi General Lul·lià" loading="lazy"></li><li><img src="img/entitats/aldaba.png" alt="Fundación Aldaba" loading="lazy"></li><li><img src="img/entitats/academia.png" alt="Acadèmia del Clima" loading="lazy"></li><li><img src="img/entitats/cancosta.png" alt="Can Costa" loading="lazy"></li><li class="lname">Fundación Nadine</li><li><img src="img/entitats/enderrock.png" alt="Enderrock" loading="lazy"></li><li class="lname">Ajuntament de Campos</li><li><img src="img/entitats/tramuntana.png" alt="Tramuntana XXI" loading="lazy"></li><li><img src="img/entitats/palmaxxi.png" alt="Palma XXI" loading="lazy"></li><li><img src="img/entitats/pla.png" alt="Pla de Mallorca XXI" loading="lazy"></li><li><img src="img/entitats/dbalears.png" alt="dBalears" loading="lazy"></li><li class="lname">Cooperativa NOMA</li><li><img src="img/entitats/ona.png" alt="Ona Mediterrània" loading="lazy"></li><li><img src="img/entitats/santanyi.png" alt="Ajuntament de Santanyí" loading="lazy"></li><li class="lname">Ajuntament de Marratxí</li><li><img src="img/entitats/palma.png" alt="Ajuntament de Palma" loading="lazy"></li><li class="lname">Associació Memòria de Mallorca</li><li class="lname">Àgora Portals</li></ul></div></div></section></div><div class="page" data-route="/projectes" data-title="Projectes · Honest" hidden><section class="pt"><p class="m">Portfolio de projectes</p><h1>Idees que <span class="kg">mouen</span> la societat.</h1><p class="lede">Eines d’IA, webs i plataformes, identitats, campanyes, editorial i art: projectes on la creativitat<br class="dbr"> i la tecnologia es posen al servei de la societat.</p></section>
+<section class="s pf"><div class="pfbar"><div class="filters" role="toolbar" aria-label="Filtra els projectes"><button class="chip on" type="button" data-filter="all" aria-pressed="true">Tot</button><button class="chip" type="button" data-filter="ia" aria-pressed="false">IA</button><button class="chip" type="button" data-filter="web" aria-pressed="false">Web</button><button class="chip" type="button" data-filter="identitat" aria-pressed="false">Identitat</button><button class="chip" type="button" data-filter="campanya" aria-pressed="false">Campanyes</button><button class="chip" type="button" data-filter="editorial" aria-pressed="false">Editorial</button><button class="chip" type="button" data-filter="art" aria-pressed="false">Art</button><button class="chip" type="button" data-filter="disseny" aria-pressed="false">Disseny gràfic</button><button class="chip" type="button" data-filter="video" aria-pressed="false">Vídeo</button><button class="chip" type="button" data-filter="esdeveniments" aria-pressed="false">Esdeveniments</button><button class="chip" type="button" data-filter="tallers" aria-pressed="false">Tallers</button><button class="chip" type="button" data-filter="comunicacio" aria-pressed="false">Comunicació</button><button class="chip" type="button" data-filter="musica" aria-pressed="false">Música</button></div></div><div class="cards works"><a class="card work" data-cat="web" href="#/projectes/fundacio-tutelar-dema"><div class="ph d-blue noimg"><span class="blank"><i class="s-half"></i></span></div><p class="k">Website · Redisseny</p><h3>Fundació Tutelar Demà</h3><p class="wd">Nova web accessible per a la fundació, fruit d’un conveni: de la web de 2004 a una web clara i actual.</p></a><a class="card work" data-cat="campanya disseny tallers comunicacio" href="#/projectes/balcons-per-palestina"><div class="ph d-red"><img src="img/balcons-1.jpg" alt="Balcons per Palestina" loading="lazy"></div><p class="k">Campanya</p><h3>Balcons per Palestina</h3><p class="wd">Cinc tallers per teixir banderes de Palestina i omplir els balcons: activació social i comunitària amb Balcons per la Pau.</p></a><a class="card work" data-cat="editorial disseny" href="#/projectes/revista-lestel"><div class="ph d-red"><img src="img/estel-1.jpg" alt="Revista L’Estel" loading="lazy"></div><p class="k">Redisseny editorial</p><h3>Revista L’Estel</h3><p class="wd">Redisseny d’una revista amb 40 anys d’història: noves retícules, línia editorial i set números d’acompanyament.</p></a><a class="card work" data-cat="web identitat disseny comunicacio" href="#/projectes/regenera-deia"><div class="ph d-red"><img src="img/regenera-1.jpg" alt="Regenera Deià" loading="lazy"></div><p class="k">Web &amp; comunicació</p><h3>Regenera Deià</h3><p class="wd">Suport en comunicació, web i xarxes socials per a un projecte de regeneració comunitària a Deià.</p></a><a class="card work" data-cat="web identitat comunicacio" href="#/projectes/fundacio-mediterrani"><div class="ph d-blue noimg"><span class="blank"><i class="s-square"></i></span></div><p class="k">Web · Conveni</p><h3>Fundació Iniciatives del Mediterrani</h3><p class="wd">Nou branding, logotip i una web moderna que connecta amb els públics joves de la fundació.</p></a><a class="card work" data-cat="comunicacio disseny esdeveniments musica" href="#/projectes/mapa-de-ruido"><div class="ph d-blue"><img src="img/mapa-2.jpg" alt="Mapa de Ruido" loading="lazy"></div><p class="k">Comunicació · Festival</p><h3>Mapa de Ruido · Comunicació i tecnologia</h3><p class="wd">Direcció associada, comunicació, xarxes i organització de càpsules del festival d’art sonor.</p></a><a class="card work" data-cat="tallers art musica" href="#/projectes/taller-live-coding"><div class="ph d-blue"><img src="img/mapa-1.jpg" alt="Taller de live coding i mapping" loading="lazy"></div><p class="k">Tecnologia · Taller</p><h3>Taller de live coding i mapping</h3><p class="wd">Aprendre a fer art amb codi de programació: live coding i mapping dins el festival Mapa de Ruido.</p></a><a class="card work" data-cat="art esdeveniments" href="#/projectes/cube"><div class="ph d-red"><img src="img/cube-1.jpg" alt="CUBE · Art contemporani" loading="lazy"></div><p class="k">Espai</p><h3>CUBE · Art contemporani</h3><p class="wd">Galeria efímera al centre de Palma: un cub blanc amb exposicions sobre el turisme de masses.</p></a><a class="card work" data-cat="art disseny esdeveniments tallers" href="#/projectes/saufausreden"><div class="ph d-red"><img src="img/sauf-1.jpg" alt="Saufausreden" loading="lazy"></div><p class="k">Residències</p><h3>Saufausreden</h3><p class="wd">Residències a la Platja de Palma: artistes de tot el món transformen el paisatge i dialoguen amb el turisme de masses.</p></a><a class="card work" data-cat="art" href="#/projectes/nit-de-lart-santanyi"><div class="ph d-red noimg"><span class="blank"><i class="s-tri"></i></span></div><p class="k">Instal·lació</p><h3>Nit de l’Art · Santanyí</h3><p class="wd">Projeccions amb IA i reconeixement facial: art d’interacció a l’espai públic de Santanyí.</p></a><a class="card work" data-cat="web esdeveniments" href="#/projectes/can-costa"><div class="ph d-blue"><img src="img/cancosta-1.jpg" alt="Can Costa" loading="lazy"></div><p class="k">Web · Festival</p><h3>Can Costa</h3><p class="wd">Nova direcció de marca i creativa del centre cultural de la casa natal de Miquel Costa i Llobera.</p></a><a class="card work" data-cat="campanya disseny esdeveniments tallers comunicacio" href="#/projectes/creativitats-que-sumen"><div class="ph d-red"><img src="img/creativitats-1.jpg" alt="Creativitats que (+) sumen" loading="lazy"></div><p class="k">Campanya · Fundación Aldaba</p><h3>Creativitats que (+) sumen</h3><p class="wd">Jornada amb la Fundación Aldaba per apoderar persones en exclusió social a través de l’art.</p></a><a class="card work" data-cat="art video musica" href="#/projectes/aina-losange"><div class="ph d-red"><img src="img/aina-1.jpg" alt="Aina Losange" loading="lazy"></div><p class="k">Videoclip</p><h3>Videoclip Aina Losange</h3><p class="wd">Escenografia del videoclip d’Aina Losange amb una de les nostres obres d’art.</p></a><a class="card work" data-cat="disseny" href="#/projectes/data-to-design"><div class="ph d-blue noimg"><span class="blank"><i class="s-tri"></i></span></div><p class="k">Recerca · Dades</p><h3>Data to Design</h3><p class="wd">Dades climàtiques convertides en gràfics vectorials: un disseny que canvia amb el temps meteorològic.</p></a><a class="card work" data-cat="comunicacio disseny" href="#/projectes/academia-del-clima"><div class="ph d-blue noimg"><span class="blank"><i class="s-circle"></i></span></div><p class="k">Col·laboració · Clima</p><h3>Acadèmia del Clima</h3><p class="wd">Conveni amb l’Acadèmia del Clima: cartells de tot l’any, consultoria de sistemes i web.</p></a><a class="card work" data-cat="art" href="#/projectes/premi-benet-ams"><div class="ph d-red noimg"><span class="blank"><i class="s-half"></i></span></div><p class="k">Premi · Ceràmica</p><h3>Premi Benet Ams de Ceràmica</h3><p class="wd">Premi de ceràmica per una instal·lació amb ceràmiques interactives, IA i robòtica.</p></a><a class="card work" data-cat="art" href="#/projectes/corall-12"><div class="ph d-red noimg"><span class="blank"><i class="s-square"></i></span></div><p class="k">Espai · Estudi</p><h3>Corall 12</h3><p class="wd">Estudi creatiu amb tallers de pintura, fusteria i ceràmica, residències i cowork a la Platja de Palma.</p></a><a class="card work" data-cat="web" href="#/projectes/mater-ariany"><div class="ph d-blue noimg"><span class="blank"><i class="s-half"></i></span></div><p class="k">Website</p><h3>Pàgina web Mater Ariany</h3><p class="wd">Web accessible de l’hotel de Mater a Ariany, pensada per a persones amb discapacitat.</p></a><a class="card work" data-cat="web" href="#/projectes/possessio-muntanya"><div class="ph d-blue noimg"><span class="blank"><i class="s-circle"></i></span></div><p class="k">Website</p><h3>Pàgina web Possessió Muntanya</h3><p class="wd">Web d’una explotació agrícola que reactiva la possessió a través de l’oli.</p></a><a class="card work" data-cat="disseny identitat" href="#/projectes/packaging-noma"><div class="ph d-red noimg"><span class="blank"><i class="s-square"></i></span></div><p class="k">Packaging · Conveni</p><h3>Packaging Cooperativa NOMA</h3><p class="wd">Packaging de la línia de cosmètica de cànem d’una cooperativa que reactiva l’agricultura balear.</p></a><a class="card work" data-cat="disseny editorial" href="#/projectes/dbalears-dijous-bo"><div class="ph d-red noimg"><span class="blank"><i class="s-tri"></i></span></div><p class="k">Disseny gràfic · Premsa</p><h3>dBalears · Dijous Bo</h3><p class="wd">Direcció d’art i editorial d’un diari imprès de més de 20.000 exemplars.</p></a><a class="card work" data-cat="tallers art" href="#/projectes/taller-polaroid"><div class="ph d-red noimg"><span class="blank"><i class="s-circle"></i></span></div><p class="k">Taller · Fotografia</p><h3>Taller de fotografia Polaroid</h3><p class="wd">Fotografia social amb Polaroid pels carrers de Palma amb Margarito de la Guetto.</p></a><a class="card work" data-cat="art esdeveniments" href="#/projectes/lens-festival"><div class="ph d-red noimg"><span class="blank"><i class="s-half"></i></span></div><p class="k">Instal·lació · Festival</p><h3>Instal·lació al Lens Festival</h3><p class="wd">Instal·lació sobre la interacció humà-màquina: la càmera com a mirall, amb IA.</p></a><a class="card work" data-cat="art esdeveniments" href="#/projectes/hello-god-campos"><div class="ph d-red noimg"><span class="blank"><i class="s-circle"></i></span></div><p class="k">Instal·lació · Art i tecnologia</p><h3>Hello God · Nit de l’Art de Campos</h3><p class="wd">La tecnologia com a substitució de les necessitats espirituals: una instal·lació vista per més de 10.000 persones.</p></a></div><p class="empty" hidden>No hi ha projectes en aquesta categoria.</p></section></div><div class="page" data-route="/projectes/fundacio-tutelar-dema" data-title="Fundació Tutelar Demà · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Tecnologia · Website · Redisseny</p><h1>Fundació Tutelar Demà</h1><p class="lede">Nova web per a la Fundació Tutelar Demà, fruit d’un conveni de col·laboració: una fundació que acompanya persones amb discapacitat intel·lectual i que tenia una web de 2004.</p></section>
+
+<section class="s"><div class="two"><div><p><b>Un conveni</b>El projecte neix d’un conveni de col·laboració signat entre la fundació i Honest.</p><p><b>De 2004 a avui</b>La web anterior era de l’any 2004 i s’havia quedat molt desactualitzada. N’hem fet una de nova, clara i actual, que explica millor la feina de la fundació.</p><p><b>Accessible per a tothom</b>Hem treballat amb criteris d’accessibilitat perquè qualsevol persona hi pugui navegar sense barreres.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Conveni · Disseny web · Desenvolupament · Accessibilitat</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.fundaciotutelardema.com/" target="_blank" rel="noopener"><span>Veure la web</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/balcons-per-palestina">Balcons per Palestina →</a></section></div><div class="page" data-route="/projectes/balcons-per-palestina" data-title="Balcons per Palestina · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Campanya</p><h1>Balcons per Palestina</h1><p class="lede">Un projecte d’activació social: grups de persones es reuneixen per teixir banderes de Palestina i omplir els balcons de solidaritat.</p></section>
+<div class="pics"><figure class="d-red"><img src="img/balcons-1.jpg" alt="Campanya Balcons per Palestina · amb Balcons per la Pau · setembre 2025" loading="lazy"></figure><figure class="d-red"><img src="img/balcons-2.jpg" alt="Campanya Balcons per Palestina · amb Balcons per la Pau · setembre 2025" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Teixir juntes</b>Vam organitzar cinc tallers a Mallorca on grups de dones es trobaven per cosir i teixir banderes de Palestina per penjar als balcons.</p><p><b>Mobilització comunitària</b>El teixir es va convertir en una excusa per trobar-se, conversar i activar el barri. Juntament amb Balcons per la Pau.</p><p><b>L’excedent, solidari</b>Les banderes sobrants es van vendre i el projecte va créixer de manera comunitària.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Activació social · Tallers · Campanya · Comunitat</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/balcons.palestina/" target="_blank" rel="noopener"><span>Instagram del projecte</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="https://www.dbalears.cat/balears/balears/2025/09/11/410577/tallers-confeccio-banderes-palestines-balcons-per-pau.html" target="_blank" rel="noopener"><span>Notícia a dBalears</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/revista-lestel">Revista L’Estel →</a></section></div><div class="page" data-route="/projectes/revista-lestel" data-title="Revista L’Estel · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Redisseny editorial</p><h1>Revista L’Estel</h1><p class="lede">Redisseny de L’Estel, una revista amb 40 anys d’història que s’havia quedat desactualitzada.</p></section>
+<div class="pics"><figure class="d-red"><img src="img/estel-1.jpg" alt="Redisseny de la revista L’Estel" loading="lazy"></figure><figure class="d-red"><img src="img/estel-2.jpg" alt="Redisseny de la revista L’Estel" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Noves retícules</b>Vam dissenyar noves graelles i un redisseny complet de la maquetació per donar-li una lectura més actual.</p><p><b>Set números d’acompanyament</b>Durant set números vam fer consultoria i acompanyament a l’equip; després ells han continuat amb el sistema que vam construir plegats.</p><p><b>Més que paper</b>Vam actualitzar els continguts i la línia editorial, i vam començar a treballar l’Instagram i la web.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Redisseny editorial · Consultoria · Línia editorial · Xarxes</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.revistalestel.cat/" target="_blank" rel="noopener"><span>Veure la revista</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/regenera-deia">Regenera Deià →</a></section></div><div class="page" data-route="/projectes/regenera-deia" data-title="Regenera Deià · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Web &amp; comunicació</p><h1>Regenera Deià</h1><p class="lede">Suport en comunicació, web i xarxes socials a Regenera Deià, un projecte de regeneració comunitària amb conveni de col·laboració.</p></section>
+<div class="pics"><figure class="d-red"><img src="img/regenera-1.jpg" alt="Regenera Deià · suport a la iniciativa" loading="lazy"></figure><figure class="d-red"><img src="img/regenera-2.jpg" alt="Regenera Deià · suport a la iniciativa" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Comunicació</b>Acompanyam el projecte en la comunicació i en com explica la seva feina.</p><p><b>Web i xarxes</b>Hem desenvolupat la web i portam les xarxes socials del projecte.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Conveni · Comunicació · Web · Xarxes socials</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://regeneradeia.com/" target="_blank" rel="noopener"><span>Veure la web</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="https://ajdeia.net/ca/agenda/regenera-deia-0" target="_blank" rel="noopener"><span>Agenda a l’Ajuntament de Deià</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/fundacio-mediterrani">Fundació Iniciatives del Mediterrani →</a></section></div><div class="page" data-route="/projectes/fundacio-mediterrani" data-title="Fundació Iniciatives del Mediterrani · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Tecnologia · Web · Conveni</p><h1>Fundació Iniciatives del Mediterrani</h1><p class="lede">Nova web i nova imatge per a la Fundació Iniciatives del Mediterrani, amb conveni de col·laboració.</p></section>
+
+<section class="s"><div class="two"><div><p><b>Una imatge nova</b>Hem actualitzat tot el branding: logotip i imatge gràfica, que s’havien quedat antics.</p><p><b>Una web moderna</b>Una web de disseny actual que connecta amb els públics més joves i amb el públic objectiu de la fundació.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Conveni · Branding · Logotip · Disseny web</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.fim.eco/" target="_blank" rel="noopener"><span>Veure la web</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/mapa-de-ruido">Mapa de Ruido · Comunicació i tecnologia →</a></section></div><div class="page" data-route="/projectes/mapa-de-ruido" data-title="Mapa de Ruido · Comunicació i tecnologia · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Creativitat + Tecnologia · Comunicació · Festival</p><h1>Mapa de Ruido · Comunicació i tecnologia</h1><p class="lede">Comunicació, xarxes i organització del festival d’art sonor Mapa de Ruido, on participam en la direcció com a part associada.</p></section>
+<div class="pics"><figure class="d-blue"><img src="img/mapa-2.jpg" alt="Cartell del festival Mapa de Ruido" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Direcció del festival</b>Formam part de la direcció del festival com a entitat associada.</p><p><b>Comunicació i xarxes</b>Hem portat la comunicació, el seguiment i les xarxes socials.</p><p><b>Esdeveniments i càpsules</b>Organització del festival i de les càpsules, com Alta Intensitat i Síntesi Modular, a l’Espacio Pulpo.</p><p><b>També hi vam fer un taller</b>Dins el festival vam impartir un taller de live coding i mapping. <a class="u" href="#/projectes/taller-live-coding">Veure el taller</a></p></div>
+<div><p class="m">Què hi vam fer</p><p>Direcció · Comunicació · Xarxes · Producció d’esdeveniments</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/mapaderuido/" target="_blank" rel="noopener"><span>Instagram del festival</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/taller-live-coding">Taller de live coding i mapping →</a></section></div>
+<div class="page" data-route="/projectes/taller-live-coding" data-title="Taller de live coding i mapping · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Tecnologia · Taller · Mapa de Ruido</p><h1>Taller de live coding i mapping</h1><p class="lede">Un taller de noves tecnologies perquè la gent aprengués a fer art a través del codi de programació, dins el festival Mapa de Ruido.</p></section>
+<div class="pics"><figure class="d-blue"><img src="img/mapa-1.jpg" alt="Taller de live coding impartit per Honest al festival Mapa de Ruido" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Art amb codi</b>El live coding converteix el codi en un instrument: s’escriu en directe per crear so i imatge.</p><p><b>Mapping i vectors</b>Vam treballar la generació de formes i vectors amb codi i la seva projecció sobre l’espai.</p><p><b>Dins el festival</b>El taller formava part de <a class="u" href="#/projectes/mapa-de-ruido">Mapa de Ruido</a>.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Formació · Live coding · Mapping · Codi creatiu</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/mapaderuido/" target="_blank" rel="noopener"><span>Instagram de Mapa de Ruido</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/cube">CUBE · Art contemporani →</a></section></div>
+<div class="page" data-route="/projectes/cube" data-title="CUBE · Art contemporani · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Espai</p><h1>CUBE · Art contemporani</h1><p class="lede">Una galeria efímera al centre de Palma durant el darrer trimestre de 2025, amb exposicions d’artistes al voltant del turisme de masses.</p></section>
+<div class="pics"><figure class="d-red"><img src="img/cube-1.jpg" alt="Inauguració de l’espai d’art CUBE" loading="lazy"></figure><figure class="d-red"><img src="img/cube-2.jpg" alt="Inauguració de l’espai d’art CUBE" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Dels marges al centre</b>CUBE portava al centre de Palma mirades crítiques sobre el turisme de masses.</p><p><b>Un cub blanc</b>L’espai era literalment un white cube, el cub blanc típic de les galeries d’art, i a dins s’hi feien intervencions artístiques.</p><p><b>Tornarà</b>Actualment l’espai és en obres; en un futur el tornarem a obrir.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Galeria · Comissariat · Exposicions · Producció</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/honest_playground/" target="_blank" rel="noopener"><span>Instagram d’Honest</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/saufausreden">Saufausreden →</a></section></div><div class="page" data-route="/projectes/saufausreden" data-title="Saufausreden · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Residències</p><h1>Saufausreden</h1><p class="lede">Programa de residències artístiques a Corall 12, a la Platja de Palma, que convida artistes de tot el món a dialogar amb el turisme de masses.</p></section>
+<div class="pics"><figure class="d-red"><img src="img/sauf-1.jpg" alt="Residència artística Saufausreden · Llorenç Garrit" loading="lazy"></figure><figure class="d-red"><img src="img/sauf-2.jpg" alt="Residència artística Saufausreden · Llorenç Garrit" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Residències a la Platja de Palma</b>Convidam artistes de tot el món a viure i treballar a Corall 12, a la zona del Ballermann.</p><p><b>Transitar el paisatge</b>Els artistes recorren el paisatge de la Platja de Palma, el transformen i dialoguen amb el turisme de masses.</p><p><b>2025</b>Dues edicions: Margarito de la Guetto i Llorenç Garrit.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Residències · Art contemporani · Territori</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/honest_playground/" target="_blank" rel="noopener"><span>Instagram d’Honest</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/nit-de-lart-santanyi">Nit de l’Art · Santanyí →</a></section></div><div class="page" data-route="/projectes/nit-de-lart-santanyi" data-title="Nit de l’Art · Santanyí · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Instal·lació</p><h1>Nit de l’Art · Santanyí</h1><p class="lede">Instal·lació d’art interactiu per a la Nit de l’Art de Santanyí: projeccions amb intel·ligència artificial i reconeixement facial de la gent que hi passava.</p></section>
+
+<section class="s"><div class="two"><div><p><b>Art d’interacció</b>Muntam diferents sistemes amb què el públic interactuava i es veia transformat en directe.</p><p><b>Art, tecnologia i nous mitjans</b>Una peça que uneix intel·ligència artificial, visió per computador i espai públic. Per a l’Ajuntament de Santanyí.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Instal·lació · IA · Reconeixement facial · Nous mitjans</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://ajsantanyi.net/en/node/9985" target="_blank" rel="noopener"><span>Nit de l’Art a l’Ajuntament de Santanyí</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/can-costa">Can Costa →</a></section></div><div class="page" data-route="/projectes/can-costa" data-title="Can Costa · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Tecnologia · Web · Festival</p><h1>Can Costa</h1><p class="lede">Nova direcció de marca i direcció creativa de Can Costa, el centre cultural de la casa natal de Miquel Costa i Llobera, a Pollença.</p></section>
+<div class="pics"><figure class="d-blue"><img src="img/cancosta-1.jpg" alt="Col·laboració amb el festival de música a Can Costa" loading="lazy"></figure><figure class="d-blue"><img src="img/cancosta-2.jpg" alt="Col·laboració amb el festival de música a Can Costa" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Marca</b>Hem definit la nova direcció de marca del centre cultural.</p><p><b>Direcció creativa</b>Portam la direcció creativa, la web i la comunicació de la seva programació, com el festival de música.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Direcció de marca · Direcció creativa · Web · Comunicació</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.cancosta.art" target="_blank" rel="noopener"><span>Veure la web</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/creativitats-que-sumen">Creativitats que (+) sumen →</a></section></div><div class="page" data-route="/projectes/creativitats-que-sumen" data-title="Creativitats que (+) sumen · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Campanya · Fundación Aldaba</p><h1>Creativitats que (+) sumen</h1><p class="lede">Una jornada creativa organitzada amb la Fundación Aldaba per apoderar persones en situació d’exclusió social a través de l’art.</p></section>
+<div class="pics"><figure class="d-red"><img src="img/creativitats-1.jpg" alt="Creativitats que (+) sumen · amb la Fundación Aldaba" loading="lazy"></figure><figure class="d-red"><img src="img/creativitats-2.jpg" alt="Creativitats que (+) sumen · amb la Fundación Aldaba" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Art per apoderar</b>Dibuixàvem i cream plegats: l’art com a eina per donar veu i confiança a les persones.</p><p><b>Amb la Fundación Aldaba</b>Un esdeveniment coorganitzat amb la fundació, obert i participatiu.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Esdeveniment · Tallers · Art participatiu</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.youtube.com/watch?v=xR00yxQOi9w" target="_blank" rel="noopener"><span>Veure el vídeo</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="https://aldaba.ong/" target="_blank" rel="noopener"><span>Fundación Aldaba</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/aina-losange">Videoclip Aina Losange →</a></section></div><div class="page" data-route="/projectes/aina-losange" data-title="Videoclip Aina Losange · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Videoclip</p><h1>Videoclip Aina Losange</h1><p class="lede">Col·laboració en l’escenografia del videoclip d’Aina Losange, on apareix una de les nostres obres d’art.</p></section>
+<div class="pics"><figure class="d-red"><img src="img/aina-1.jpg" alt="Presentació del videoclip d’Aina Losange a Honest" loading="lazy"></figure><figure class="d-red"><img src="img/aina-2.jpg" alt="Presentació del videoclip d’Aina Losange a Honest" loading="lazy"></figure></div>
+<section class="s"><div class="two"><div><p><b>Escenografia</b>Una obra d’Honest, Hello God, forma part del fons del videoclip i s’integra en la narrativa visual.</p><p><b>Presentació</b>El videoclip es va presentar a Honest amb una instal·lació de televisors.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Escenografia · Art · Vídeo</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.youtube.com/watch?v=Yr8zEj6mdwQ" target="_blank" rel="noopener"><span>Veure el videoclip</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="https://www.ainalosange.com/" target="_blank" rel="noopener"><span>Web d’Aina Losange</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/data-to-design">Data to Design →</a></section></div><div class="page" data-route="/projectes/data-to-design" data-title="Data to Design · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Tecnologia · Recerca · Dades</p><h1>Data to Design</h1><p class="lede">Transformam dades climàtiques en gràfics vectorials per fer disseny en temps real: el disseny canvia quan canvien les dades meteorològiques.</p></section>
+<section class="s"><div class="two"><div><p><b>Real time design</b>Els gràfics es generen a partir de dades climàtiques i es transformen contínuament segons el temps que fa.</p><p><b>Aplicat a l’Acadèmia del Clima</b>S’ha aplicat principalment a la web de l’Acadèmia del Clima i a peces de comunicació sobre temàtiques climàtiques. <a class="u" href="#/projectes/academia-del-clima">Veure el projecte</a></p></div>
+<div><p class="m">Què hi vam fer</p><p>Recerca · Dades · Disseny generatiu · Temps real</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://academiadelclima.org/" target="_blank" rel="noopener"><span>Veure-ho a la web de l’Acadèmia del Clima</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/academia-del-clima">Acadèmia del Clima →</a></section></div>
+<div class="page" data-route="/projectes/academia-del-clima" data-title="Acadèmia del Clima · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Tecnologia · Col·laboració · Clima</p><h1>Acadèmia del Clima</h1><p class="lede">Conveni de col·laboració amb l’Acadèmia del Clima: comunicació gràfica de tot l’any, consultoria de sistemes informàtics i web.</p></section>
+<section class="s"><div class="two"><div><p><b>Comunicació gràfica</b>Vam dissenyar tots els cartells i la comunicació gràfica de l’any.</p><p><b>Sistemes i web</b>Consultoria de sistemes informàtics i desenvolupament de la web, on apliquem el projecte <a class="u" href="#/projectes/data-to-design">Data to Design</a>.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Conveni · Comunicació gràfica · Consultoria · Web</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://academiadelclima.org/" target="_blank" rel="noopener"><span>Veure la web</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/premi-benet-ams">Premi Benet Ams de Ceràmica →</a></section></div>
+<div class="page" data-route="/projectes/premi-benet-ams" data-title="Premi Benet Ams de Ceràmica · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Premi · Ceràmica</p><h1>Premi Benet Ams de Ceràmica</h1><p class="lede">Guanyadors del Premi Benet Ams de Ceràmica amb una instal·lació d’art i tecnologia amb ceràmiques interactives.</p></section>
+<section class="s"><div class="two"><div><p><b>Ceràmica d’aquí a 30 anys</b>La instal·lació imaginava com serà el món de la ceràmica d’aquí a trenta anys, barrejat amb intel·ligència artificial i robòtica.</p><p><b>Peces interactives</b>Ceràmiques que responen al públic: un diàleg entre l’ofici més antic i la tecnologia més nova.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Instal·lació · Ceràmica · IA · Robòtica · Premi</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/honest_playground/" target="_blank" rel="noopener"><span>Instagram d’Honest</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/corall-12">Corall 12 →</a></section></div>
+<div class="page" data-route="/projectes/corall-12" data-title="Corall 12 · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Espai · Platja de Palma</p><h1>Corall 12</h1><p class="lede">El nostre estudi creatiu a la Platja de Palma: tallers de pintura, fusteria i ceràmica, residències artístiques i cowork.</p></section>
+<section class="s"><div class="two"><div><p><b>Tallers</b>Un espai amb taller de pintura, de fusteria i de ceràmica, on es poden desenvolupar les disciplines artístiques.</p><p><b>Residències</b>Aquí es fan les residències artístiques, com <a class="u" href="#/projectes/saufausreden">Saufausreden</a>.</p><p><b>Cowork</b>També és un cowork creatiu on es pot venir a treballar.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Estudi · Tallers · Residències · Cowork</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/honest_playground/" target="_blank" rel="noopener"><span>Instagram d’Honest</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/mater-ariany">Pàgina web Mater Ariany →</a></section></div>
+<div class="page" data-route="/projectes/mater-ariany" data-title="Pàgina web Mater Ariany · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Tecnologia · Website</p><h1>Pàgina web Mater Ariany</h1><p class="lede">Web de l’hotel de Mater a Ariany, pensada des de l’accessibilitat.</p></section>
+<section class="s"><div class="two"><div><p><b>Accessibilitat</b>Vam aplicar principis d’accessibilitat i funcionalitat perquè persones amb discapacitat física, auditiva o visual hi puguin navegar sense problemes.</p><p><b>Manteniment</b>Acompanyament i manteniment anual de la web.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Disseny web · Accessibilitat · Manteniment</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://materariany.com/" target="_blank" rel="noopener"><span>Veure la web</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/possessio-muntanya">Pàgina web Possessió Muntanya →</a></section></div>
+<div class="page" data-route="/projectes/possessio-muntanya" data-title="Pàgina web Possessió Muntanya · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-blue"></i>Tecnologia · Website</p><h1>Pàgina web Possessió Muntanya</h1><p class="lede">Web de Possessió Muntanya, una explotació agrícola que vol reactivar la possessió a través de la producció d’oli.</p></section>
+<section class="s"><div class="two"><div><p><b>Reactivar la terra</b>Una web que explica el projecte de recuperació agrícola de la possessió.</p><p><b>Manteniment</b>Acompanyament i manteniment anual.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Disseny web · Desenvolupament · Manteniment</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.muntanya.es" target="_blank" rel="noopener"><span>Veure la web</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/packaging-noma">Packaging Cooperativa NOMA →</a></section></div>
+<div class="page" data-route="/projectes/packaging-noma" data-title="Packaging Cooperativa NOMA · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Packaging · Conveni</p><h1>Packaging Cooperativa NOMA</h1><p class="lede">Tot el packaging de la línia de cosmètica de cànem de la Cooperativa NOMA, un projecte de reactivació de l’agricultura balear.</p></section>
+<section class="s"><div class="two"><div><p><b>Cosmètica de cànem</b>Vam dissenyar el packaging de tota la línia de productes.</p><p><b>Agricultura balear</b>La cooperativa impulsa la reactivació agrícola de les Illes, i el projecte neix del conveni de col·laboració amb Honest.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Conveni · Packaging · Disseny gràfic</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://nomaoriginal.com/" target="_blank" rel="noopener"><span>Web de NOMA</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="https://www.canem.es/" target="_blank" rel="noopener"><span>Productes Canem</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/dbalears-dijous-bo">dBalears · Dijous Bo →</a></section></div>
+<div class="page" data-route="/projectes/dbalears-dijous-bo" data-title="dBalears · Dijous Bo · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Disseny gràfic · Editorial</p><h1>dBalears · Dijous Bo</h1><p class="lede">Direcció d’art i editorial de l’edició impresa del diari dBalears per al Dijous Bo, amb més de 20.000 exemplars.</p></section>
+<section class="s"><div class="two"><div><p><b>En paper</b>Vam dissenyar el diari imprès del qual es van fer més de 20.000 còpies.</p><p><b>Direcció d’art</b>La direcció d’art i editorial es va portar des d’Honest.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Direcció d’art · Disseny editorial · Premsa</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.dbalears.cat/" target="_blank" rel="noopener"><span>dBalears</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/taller-polaroid">Taller de fotografia Polaroid →</a></section></div>
+<div class="page" data-route="/projectes/taller-polaroid" data-title="Taller de fotografia Polaroid · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Taller · Fotografia</p><h1>Taller de fotografia Polaroid</h1><p class="lede">Taller de fotografia social amb l’artista Margarito de la Guetto, amb càmeres i carrets Polaroid pels carrers de Palma.</p></section>
+<section class="s"><div class="two"><div><p><b>Fotografia social</b>Un taller per acostar la fotografia social a les persones.</p><p><b>Pel barri</b>Dinàmiques amb càmeres i carrets Polaroid pel barri de Pere Garau, a Palma.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Formació · Fotografia · Taller</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/honest_playground/" target="_blank" rel="noopener"><span>Instagram d’Honest</span><span class="arr" aria-hidden="true">↗</span></a><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/lens-festival">Instal·lació al Lens Festival →</a></section></div>
+<div class="page" data-route="/projectes/lens-festival" data-title="Instal·lació al Lens Festival · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat · Instal·lació artística</p><h1>Instal·lació al Lens Festival</h1><p class="lede">Instal·lació per al Lens Festival sobre la interacció entre humans i màquines: com, a través de la càmera, l’ésser humà es veu a si mateix.</p></section>
+<section class="s"><div class="two"><div><p><b>Humà i màquina</b>Una peça que explora la relació entre les persones i la tecnologia a través de la imatge.</p><p><b>Intel·ligència artificial</b>La instal·lació utilitzava IA per transformar la mirada del públic sobre si mateix.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Instal·lació · IA · Nous mitjans</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span>Memòria 2025 (PDF)</span><span class="arr" aria-hidden="true">↓</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/hello-god-campos">Hello God · Nit de l’Art de Campos →</a></section></div>
+<div class="page" data-route="/projectes/hello-god-campos" data-title="Hello God · Nit de l’Art de Campos · Honest" hidden>
+<section class="pt"><p class="m"><a class="u" href="#/projectes">Projectes</a> · <i class="dot d-red"></i>Creativitat + Tecnologia · Instal·lació</p><h1>Hello God · Nit de l’Art de Campos</h1><p class="lede">Una instal·lació que presenta la tecnologia com a substitució de les necessitats espirituals de l’ésser humà. La van veure més de 10.000 persones.</p></section>
+<section class="s"><div class="two"><div><p><b>Una nova fe</b>Hello God planteja com la tecnologia ocupa el lloc que abans tenia l’espiritualitat, i a quines noves dependències ens porta.</p><p><b>Nit de l’Art de Campos</b>Instal·lació presentada a la Nit de l’Art de Campos, amb més de 10.000 visitants.</p></div>
+<div><p class="m">Què hi vam fer</p><p>Instal·lació · Art i tecnologia · Producció</p></div></div></section>
+<section class="s"><div class="h"><span>Veure més</span><span></span></div><div class="plinks"><a class="plink" href="https://www.instagram.com/honest_playground/" target="_blank" rel="noopener"><span>Instagram d’Honest</span><span class="arr" aria-hidden="true">↗</span></a></div></section>
+<section class="s"><div class="h"><span>Següent</span><span></span></div><a class="next" href="#/projectes/fundacio-tutelar-dema">Fundació Tutelar Demà →</a></section></div>
+<div class="page" data-route="/honest-lap" data-title="Honest.Lap · Laboratori d’Art i Pensament" hidden><section class="pt"><p class="m">Honest.Lap · Laboratori d’Art i Pensament</p><h1>Un laboratori obert on l’art, la tecnologia i el pensament es troben.</h1><p class="lede">Honest també és un espai per experimentar. Acollim residències artístiques, compartim coneixement a través de tallers i formació, i impulsam recerca experimental que uneix la ciència i la tecnologia amb l’art i les humanitats. Un lloc on provar idees noves, fer-se preguntes i obrir camins que després arriben a les entitats i a la societat.</p><div class="three mve lap4"><div><b>Residències artístiques</b><p>Acollim artistes perquè investiguin i produeixin obra arrelada al territori, en diàleg amb les persones i els espais.</p></div><div><b>Formació i tallers</b><p>Tallers, cursos i sessions obertes per compartir coneixement: de la creativitat al codi, sempre aprenent fent.</p></div><div><b>Art i tecnologia</b><p>Explorem què passa quan el codi, les dades i les eines digitals es posen al servei de la creació artística.</p></div><div><b>Recerca experimental</b><p>Projectes de caràcter científic i tècnic que es creuen amb l’art i les humanitats per obrir noves preguntes.</p></div></div></section>
+<section class="s"><div class="lap" aria-label="Laboratori d’Art i Pensament"><div class="c-green"><span class="lapl"><em>L</em><b>Laboratori</b></span><p><b>Laboratori</b>Un espai obert per provar, equivocar-se i tornar-hi. Aquí els processos, les preguntes i els errors importen tant com els resultats.</p></div><div class="c-red"><span class="lapl"><em>A</em><b>Art</b></span><p><b>Art</b>La creació com a manera de conèixer el món: residències, instal·lacions, tallers i trobades obertes amb el públic, el barri i el territori.</p></div><div class="c-blue"><span class="lapl"><em>P</em><b>Pensament</b></span><p><b>Pensament</b>Recerca, estètica i mirada crítica. Pensam el que feim, i per què ho feim, per fer-ho millor, amb més rigor i amb molt més sentit.</p></div></div></section>
+<section class="s colsec"><div class="colhead"><p class="m">Convocatòries i reconeixements</p><h2 class="colh">Pràctica artística<br> contemporània.</h2><p class="lede">Participam en residències, premis i convocatòries artístiques. És una manera de posar a prova la nostra feina, créixer amb altres creadors i portar el laboratori més enllà del nostre estudi.</p></div>
+<div class="labx">
+<div><p class="k">Premi · Ceràmica</p><b>Premi Benet Ams de Ceràmica</b><p>Guanyadors del premi de ceràmica de Marratxí, un reconeixement a la recerca entre material, forma i idea.</p><a class="u" href="#/projectes/premi-benet-ams">Veure el projecte</a></div>
+<div><p class="k">Selecció · Art a l’espai públic</p><b>Nit de l’Art</b><p>Seleccionats per participar a la Nit de l’Art i a altres esdeveniments artístics amb instal·lacions pensades per al públic.</p><a class="u" href="#/projectes/nit-de-lart-santanyi">Veure el projecte</a></div>
+<div><p class="k">Residències · Convocatòries</p><b>Residències artístiques</b><p>Ens presentam a residències i convocatòries per seguir investigant, produint obra i compartint processos amb altres artistes.</p><a class="u" href="#/projectes/saufausreden">Veure el projecte</a></div>
+</div></section>
+<section class="s colsec"><div class="colhead"><p class="m">Recerca experimental</p><h2 class="colh">Quan les dades<br> es tornen forma.</h2><p class="lede">Creuam ciència, tecnologia, art i humanitats. Convertim informació complexa en imatges, patrons i experiències que es poden entendre, compartir i fer servir.</p></div>
+<div class="labx">
+<div><p class="k">Dades · Disseny</p><b>Data to Design</b><p>Les dades del canvi climàtic representades en patrons gràfics que es poden fer servir per dissenyar: una manera de portar la crisi climàtica als objectes, les superfícies i les imatges del dia a dia.</p><a class="u" href="#/projectes/data-to-design">Veure el projecte</a></div>
+<div><p class="k">Clima · Col·laboració</p><b>Acadèmia del Clima</b><p>Col·laboració per fer més visible i comprensible l’emergència climàtica a través de la creativitat, el disseny i la comunicació.</p><a class="u" href="#/projectes/academia-del-clima">Veure el projecte</a></div>
+<div><p class="k">Codi · Art sonor</p><b>Live coding a Mapa de Ruido</b><p>Tallers de live coding i de codi per a la generació de vectors i gràfics artístics, dins el festival d’art sonor Mapa de Ruido.</p><a class="u" href="#/projectes/taller-live-coding">Veure el projecte</a></div>
+</div></section>
+<section class="s colsec"><div class="colhead"><p class="m">Espais</p><h2 class="colh">Llocs per crear<br> i per mostrar.</h2><p class="lede">El laboratori també és físic: un estudi on es treballa i es fan residències, i una galeria on l’art es troba amb el públic.</p></div>
+<div class="cards works lapesp">
+<a class="card work" href="#/projectes/corall-12"><div class="ph d-blue noimg"><span class="blank"><i class="s-square"></i></span></div><p class="k">Cowork creatiu · Platja de Palma</p><h3>Corall 12 · Creative Cowork</h3><p class="wd">Estudi creatiu amb tallers de pintura, fusteria i ceràmica, residències i cowork a la Platja de Palma.</p></a>
+<a class="card work" href="#/projectes/cube"><div class="ph d-red"><img src="img/cube-1.jpg" alt="CUBE · Art contemporani" loading="lazy"></div><p class="k">Espai d’art experimental · Palma</p><h3>CUBE · Experimental Art Space</h3><p class="wd">Galeria efímera al centre de Palma: un cub blanc amb exposicions sobre el turisme de masses.</p></a>
+</div></section>
+</div><div class="page" data-route="/contacte" data-title="Col·labora · Honest" hidden><section class="pt"><p class="m">Col·laboram?</p><h1>Col·laborem.</h1><p class="lede">Honest és una associació: creixem amb les entitats, les persones i els artistes que s’hi sumen.</p></section>
+<section class="s"><div class="h"><span>Omple el formulari, telefona’ns o vine a veure’ns</span><span></span></div><div class="cform">
+<form class="form" name="contacte" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+<input type="hidden" name="form-name" value="contacte"><p class="hp"><label>No omplis aquest camp <input name="bot-field"></label></p>
+<div class="frow"><label class="fld"><span>Nom i llinatges *</span><input name="nom" type="text" autocomplete="name" required></label><label class="fld"><span>Entitat o organització</span><input name="entitat" type="text" autocomplete="organization"></label></div>
+<div class="frow"><label class="fld"><span>Correu electrònic *</span><input name="email" type="email" autocomplete="email" required></label><label class="fld"><span>Telèfon</span><input name="telefon" type="tel" autocomplete="tel"></label></div>
+<fieldset class="fld fchips"><legend>Sobre què vols parlar?</legend>
+<label><input type="radio" name="motiu" value="Projecte" checked><span>Un projecte</span></label><label><input type="radio" name="motiu" value="Conveni"><span>Un conveni</span></label><label><input type="radio" name="motiu" value="Honest.Lap"><span>Honest.Lap</span></label><label><input type="radio" name="motiu" value="Voluntariat"><span>Voluntariat</span></label><label><input type="radio" name="motiu" value="Altres"><span>Altres</span></label></fieldset>
+<label class="fld"><span>Missatge *</span><textarea name="missatge" rows="6" required></textarea></label>
+<label class="fchk"><input type="checkbox" name="privacitat" required><span>He llegit i accept la <a class="u" href="#/privacitat">política de privacitat</a>. *</span></label>
+<button class="fsend" type="submit"><span>Enviar missatge</span><span class="arr" aria-hidden="true">→</span></button>
+<p class="fmsg" role="status" aria-live="polite"></p>
+</form>
+<aside class="cdata"><div><p class="m">Correu</p><p><a class="u" href="mailto:hola@honest.cat">hola@honest.cat</a></p></div><div><p class="m">Telèfon</p><p><a href="tel:+34670492591">670 49 25 91</a></p></div><div><p class="m">Seu</p><p>C. Corall 12 A<br>07600 Platja de Palma, Mallorca</p></div><div><p class="m">Xarxes</p><p><a class="u" href="https://www.instagram.com/honest_playground/" target="_blank" rel="noopener">Instagram</a><br><a class="u" href="https://www.linkedin.com/company/associaci%C3%B3-honest/" target="_blank" rel="noopener">LinkedIn</a><br><a class="u" href="https://www.youtube.com/@HonestAssociaci%C3%B3" target="_blank" rel="noopener">YouTube</a></p></div></aside>
+</div></section></div><div class="page" data-route="/transparencia" data-title="Transparència · Honest" hidden><section class="pt"><p class="m">Transparència</p><h1>Comptes clars, feina a la vista.</h1><p class="lede">Com a associació sense ànim de lucre, posem a l’abast de tothom els documents que expliquen qui som, com ens organitzem i què hem fet.</p></section>
+<section class="s"><div class="h"><span>Documents</span><span></span></div><div class="docs">
+<a class="doc" href="#/codi-etic"><span class="dt">Codi ètic</span><span class="dd">Principis i compromisos de l’associació</span><span class="dl">Veure →</span></a><a class="doc" href="docs/estatuts-honest.pdf" target="_blank" rel="noopener"><span class="dt">Estatuts</span><span class="dd">Estatuts de l’Associació Honest</span><span class="dl">PDF ↓</span></a>
+<a class="doc" href="docs/memoria-honest-2025.pdf" target="_blank" rel="noopener"><span class="dt">Memòria anual 2025</span><span class="dd">Activitat, projectes i impacte de l’any 2025</span><span class="dl">PDF ↓</span></a>
+<a class="doc" href="docs/llibre-anual-2025.xlsx" download><span class="dt">Llibre anual 2025</span><span class="dd">Ingressos i despeses de l’exercici 2025</span><span class="dl">XLSX ↓</span></a>
+<a class="doc" href="#/convenis"><span class="dt">Convenis</span><span class="dd">Convenis de col·laboració signats per l’associació</span><span class="dl">Veure →</span></a>
+</div></section>
+<section class="s"><div class="h"><span>Subvencions</span><span></span></div><div class="docs subv"><div class="doc"><span class="dt">Fundació Guillem Cifre de Colonya</span><span class="dd">Ajuda a projectes socials · Colonya Caixa Pollença</span><span class="dl">2026</span></div></div></section>
+</div><div class="page" data-route="/convenis" data-title="Convenis · Honest" hidden><section class="pt"><p class="m">Transparència</p><h1>Convenis de col·laboració.</h1><p class="lede">Aliances estables amb cooperatives i entitats que van més enllà del marc administratiu i esdevenen processos reals de cooperació i desenvolupament compartit.</p></section>
+<section class="s"><div class="h"><span>Convenis 2025</span><span></span></div><div class="docs conv">
+<a class="doc" href="#/projectes/fundacio-mediterrani"><span class="dt">Fundació Iniciatives del Mediterrani</span><span class="dd">Comunicació, pàgina web i materials gràfics de la fundació.</span><span class="dl">Veure projecte →</span></a>
+<a class="doc" href="#/projectes/regenera-deia"><span class="dt">Regenera Deià</span><span class="dd">Identitat visual i pàgina web del projecte.</span><span class="dl">Veure projecte →</span></a>
+<div class="doc"><span class="dt">Cooperativa NOMA</span><span class="dd">Disseny de packaging i suport creatiu a la cooperativa.</span><span class="dl">2025</span></div>
+<div class="doc"><span class="dt">Associació Ona Mediterrània</span><span class="dd">Cooperació en projectes culturals i socials.</span><span class="dl">2025</span></div>
+</div></section>
+<section class="s"><div class="h"><span>Vols fer un conveni amb nosaltres?</span><span></span></div><div class="lg"><p>Si ets una entitat del tercer sector, una cooperativa o una associació i vols que treballem plegats de manera estable, escriu-nos a <a class="u" href="mailto:hola@honest.cat">hola@honest.cat</a>.</p><p><a class="fbtn" href="#/contacte">Treballem junts →</a></p></div></section></div><div class="page" data-route="/avis-legal" data-title="Avís legal · Honest" hidden><section class="pt"><p class="m">Avís legal</p><h1>Avís legal</h1><p class="lede">Informació legal sobre el titular i l’ús d’aquest lloc web.</p></section><section class="s legal"><div class="h"><span>Titular del lloc web</span><span></span></div><div class="lg"><p>En compliment de la Llei 34/2002, de serveis de la societat de la informació i de comerç electrònic (LSSI-CE), s’informa que aquest lloc web és titularitat de:</p><p><b>Associació Honest</b> · CIF G22446975 · Núm. de registre d’associacions 311000012112 · C. Corall 12 A, 07600 Platja de Palma (Illes Balears) · <a class="u" href="mailto:hola@honest.cat">hola@honest.cat</a></p></div></section><section class="s legal"><div class="h"><span>Objecte</span><span></span></div><div class="lg"><p>Aquest lloc web té com a finalitat donar a conèixer l’Associació Honest, les seves activitats, projectes i línies de treball, i facilitar el contacte amb entitats i persones interessades.</p></div></section><section class="s legal"><div class="h"><span>Condicions d’ús</span><span></span></div><div class="lg"><p>L’accés al lloc web és gratuït i implica l’acceptació d’aquestes condicions. La persona usuària es compromet a fer-ne un ús adequat i lícit, i a no utilitzar-ne els continguts amb finalitats contràries a la llei o que puguin perjudicar drets de tercers.</p></div></section><section class="s legal"><div class="h"><span>Propietat intel·lectual i industrial</span><span></span></div><div class="lg"><p>Els textos, dissenys, imatges, logotips i altres continguts d’aquest lloc web són propietat de l’Associació Honest o de tercers que n’han autoritzat l’ús. Els logotips de les entitats col·laboradores pertanyen als seus respectius titulars i s’hi mostren únicament per identificar la col·laboració. No se’n permet la reproducció, distribució o transformació sense autorització expressa.</p></div></section><section class="s legal"><div class="h"><span>Responsabilitat</span><span></span></div><div class="lg"><p>L’Associació Honest treballa perquè la informació sigui correcta i actualitzada, però no pot garantir l’absència d’errors ni es fa responsable de l’ús que se’n faci. Els enllaços a llocs web de tercers s’ofereixen a títol informatiu i Honest no es responsabilitza dels seus continguts.</p></div></section><section class="s legal"><div class="h"><span>Legislació aplicable</span><span></span></div><div class="lg"><p>Aquest avís legal es regeix per la legislació espanyola. Per a qualsevol controvèrsia, les parts se sotmeten als jutjats i tribunals de Palma, llevat que la normativa aplicable disposi una altra cosa.</p></div></section><section class="s legal"><p class="upd">Darrera actualització: setembre de 2026.</p></section></div><div class="page" data-route="/privacitat" data-title="Privacitat · Honest" hidden><section class="pt"><p class="m">Política de privacitat</p><h1>Privacitat</h1><p class="lede">Com tractem les dades personals de les persones que es posen en contacte amb nosaltres.</p></section><section class="s legal"><div class="h"><span>Responsable del tractament</span><span></span></div><div class="lg"><p><b>Associació Honest</b> · CIF G22446975 · Núm. de registre d’associacions 311000012112 · C. Corall 12 A, 07600 Platja de Palma (Illes Balears) · <a class="u" href="mailto:hola@honest.cat">hola@honest.cat</a></p></div></section><section class="s legal"><div class="h"><span>Quines dades tractem</span><span></span></div><div class="lg"><p>Només tractem les dades que ens facilites voluntàriament quan ens escrius per correu electrònic o per altres canals de contacte: nom, adreça electrònica, telèfon i el contingut del missatge.</p></div></section><section class="s legal"><div class="h"><span>Finalitat</span><span></span></div><div class="lg"><p>Utilitzem aquestes dades per respondre les teves consultes, gestionar possibles col·laboracions, projectes o activitats, i, si ens ho autoritzes, informar-te de les activitats de l’associació.</p></div></section><section class="s legal"><div class="h"><span>Base legal</span><span></span></div><div class="lg"><p>El tractament es basa en el teu consentiment en contactar-nos (art. 6.1.a del RGPD) i, si escau, en l’execució d’un acord de col·laboració (art. 6.1.b del RGPD).</p></div></section><section class="s legal"><div class="h"><span>Conservació</span><span></span></div><div class="lg"><p>Conservarem les dades el temps necessari per atendre la teva sol·licitud i, després, durant els terminis que exigeixi la normativa aplicable.</p></div></section><section class="s legal"><div class="h"><span>Destinataris</span><span></span></div><div class="lg"><p>No cedim les dades a tercers, llevat d’obligació legal. Poden tenir-hi accés proveïdors tecnològics que ens presten serveis (per exemple, correu electrònic o allotjament web), sempre amb les garanties adequades.</p></div></section><section class="s legal"><div class="h"><span>Els teus drets</span><span></span></div><div class="lg"><p>Pots exercir els drets d’accés, rectificació, supressió, oposició, limitació del tractament i portabilitat escrivint a <a class="u" href="mailto:hola@honest.cat">hola@honest.cat</a>. Si consideres que no hem atès correctament la teva sol·licitud, pots presentar una reclamació davant l’Agència Espanyola de Protecció de Dades (www.aepd.es).</p></div></section><section class="s legal"><p class="upd">Darrera actualització: setembre de 2026.</p></section></div><div class="page" data-route="/cookies" data-title="Política de galetes · Honest" hidden><section class="pt"><p class="m">Política de galetes</p><h1>Galetes</h1><p class="lede">Informació sobre l’ús de galetes (cookies) en aquest lloc web.</p></section><section class="s legal"><div class="h"><span>Què són les galetes</span><span></span></div><div class="lg"><p>Les galetes són petits arxius que un lloc web desa al navegador per recordar informació sobre la visita.</p></div></section><section class="s legal"><div class="h"><span>Quines galetes utilitzem</span><span></span></div><div class="lg"><p>Aquest lloc web <b>no utilitza galetes pròpies ni de tercers</b> amb finalitats analítiques, publicitàries o de seguiment. Tampoc no incorpora eines d’estadístiques ni xarxes socials que instal·lin galetes.</p><p>Per aquest motiu no es mostra cap bàner de consentiment.</p></div></section><section class="s legal"><div class="h"><span>Enllaços externs</span><span></span></div><div class="lg"><p>Si segueixes un enllaç cap a un altre lloc web (per exemple, les nostres xarxes socials), aquest pot utilitzar les seves pròpies galetes, que es regeixen per la seva política.</p></div></section><section class="s legal"><div class="h"><span>Canvis</span><span></span></div><div class="lg"><p>Si en el futur incorporem galetes, actualitzarem aquesta política i, quan calgui, et demanarem el consentiment.</p></div></section><section class="s legal"><p class="upd">Darrera actualització: setembre de 2026.</p></section></div><div class="page" data-route="/codi-etic" data-title="Codi ètic · Honest" hidden><section class="pt"><p class="m">Transparència</p><h1>Codi ètic</h1><p class="lede">Els principis que guien la manera de treballar de l’Associació Honest: amb les entitats, amb les persones i amb la societat.</p></section>
+<section class="s legal"><div class="h"><span>Principis</span><span></span></div><div class="ethic"><div><b>1. Honestedat</b><p>Diem les coses com són. Només proposem allò que una entitat necessita de veritat, expliquem amb claredat què farem i com, i reconeixem els errors quan n’hi ha.</p></div><div><b>2. Integritat i independència</b><p>Les nostres decisions es guien pel valor social dels projectes. No acceptem encàrrecs, patrocinis ni col·laboracions que comprometin els nostres valors o la confiança de les entitats amb qui treballem.</p></div><div><b>3. Transparència</b><p>Fem públics els nostres estatuts, les memòries d’activitat i la informació econòmica. Expliquem amb claredat les condicions de cada col·laboració des del primer moment.</p></div><div><b>4. Selecció responsable dels projectes</b><p>Triem els projectes pel seu impacte social, cultural o ambiental. Declinem aquells que vulnerin drets humans, fomentin la discriminació o perjudiquin el medi ambient.</p></div><div><b>5. Respecte, igualtat i inclusió</b><p>Tractem totes les persones amb respecte i sense cap discriminació per raó d’origen, gènere, orientació sexual, edat, discapacitat, creences o condició social. Treballem perquè els nostres espais, materials i eines siguin accessibles.</p></div><div><b>6. Comunicació responsable i dignitat de les persones</b><p>Representem les persones i els col·lectius amb dignitat, evitant estereotips i imatges que generin llàstima o victimització. Demanem sempre el consentiment per a l’ús d’imatges, especialment de menors i persones en situació de vulnerabilitat.</p></div><div><b>7. Ús ètic de la tecnologia i la intel·ligència artificial</b><p>Utilitzem la tecnologia i la IA amb criteri: de manera transparent, respectant la privacitat, supervisant sempre els resultats i sense substituir el criteri humà en les decisions que afecten les persones.</p></div><div><b>8. Confidencialitat i protecció de dades</b><p>Protegim la informació de les entitats i de les persones amb qui treballem i la tractem d’acord amb la normativa de protecció de dades.</p></div><div><b>9. Conflictes d’interessos</b><p>Els membres de l’associació declaren qualsevol interès personal que pugui afectar una decisió i s’abstenen de participar-hi.</p></div><div><b>10. Cooperació i treball en xarxa</b><p>Compartim coneixement, reconeixem l’autoria de la feina de cada persona i entitat, i afavorim les aliances que enforteixen el tercer sector.</p></div><div><b>11. Voluntariat i col·laboradors</b><p>Garantim a les persones voluntàries i col·laboradores un tracte just, formació, reconeixement i condicions segures, i respectem el seu temps i la seva dedicació.</p></div><div><b>12. Sostenibilitat</b><p>Fem un ús responsable dels recursos, prioritzem solucions sostenibles i proveïdors de proximitat sempre que és possible.</p></div></div></section>
+<section class="s legal"><div class="h"><span>Compliment</span><span></span></div><div class="lg"><p>Aquest codi s’aplica a totes les persones sòcies, col·laboradores i voluntàries de l’associació. Qualsevol persona pot comunicar un possible incompliment escrivint a <a class="u" href="mailto:hola@honest.cat">hola@honest.cat</a>. La junta directiva en revisarà cada cas amb confidencialitat i el codi s’actualitzarà periòdicament.</p></div></section>
+<section class="s legal"><p class="upd">Aprovat per l’Associació Honest · setembre de 2026.</p></section></div></main><footer class="site-foot">
+<div class="fcols f4">
+ <div class="fabout"><a class="flogo" href="#/"><span class="L1">H</span><span class="L2">o</span><span class="L3">n</span><span class="L4">e</span><span class="L5">s</span><span class="L6">t</span></a><p>Creativitat i tecnologia per al tercer sector. Associació sense ànim de lucre.</p><div class="fsupport"><p class="fh">Amb el suport de</p><img src="img/logos/colonya.png" alt="Fundació Guillem Cifre de Colonya · Colonya Caixa Pollença" loading="lazy"></div></div>
+ <div class="fcontact"><p class="fh">Treballem junts</p><ul><li><a href="mailto:hola@honest.cat">hola@honest.cat</a></li><li>C. Corall 12 A<br>07600 Platja de Palma</li></ul><a class="fbtn flink" href="#/contacte"><span>Col·laboram?</span><span class="arr" aria-hidden="true">→</span></a></div>
+ <div><p class="fh">Navegació</p><ul><li><a href="#/qui-som">Qui som</a></li><li><a href="#/que-fem">Què feim</a></li><li><a href="#/projectes">Projectes</a></li><li><a href="#/honest-lap">Honest.Lap</a></li></ul></div>
+ <div class="castle" aria-hidden="true"><div class="cbox cbox3" id="toybox"></div></div>
+</div>
+<div class="flegal"><span>© 2026 Associació Honest · CIF G22446975 · Núm. de registre 311000012112</span><nav aria-label="Legal"><a href="#/transparencia">Transparència</a><a href="#/avis-legal">Avís legal</a><a href="#/cookies">Política de galetes</a><a href="#/privacitat">Privacitat</a></nav><div class="social"><a href="https://www.instagram.com/honest_playground/" target="_blank" aria-label="Instagram d’Honest" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.linkedin.com/company/associaci%C3%B3-honest/" target="_blank" aria-label="LinkedIn d’Honest" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a><a href="https://www.youtube.com/@HonestAssociaci%C3%B3" target="_blank" aria-label="YouTube d’Honest" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a></div></div>
+</footer><script>(function(){
+  var pages=[].slice.call(document.querySelectorAll('.page'));
+  function go(){
+    var h=location.hash||'#/';
+    if(h.indexOf('#/')!==0) return;
+    var r=h.slice(1).replace(/\/$/,'')||'/';
+    var hit=pages.filter(function(p){return p.getAttribute('data-route')===r;})[0]||pages[0];
+    pages.forEach(function(p){p.hidden=(p!==hit);});
+    document.title=hit.getAttribute('data-title');
+    r=hit.getAttribute('data-route');
+    [].forEach.call(document.querySelectorAll('[data-nav]'),function(a){var n=a.getAttribute('data-nav');if(r===n||r.indexOf(n+'/')===0)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',go); go();
+})();
+</script>
+<script>
+(function(){
+  var b=document.body, btn=document.querySelector('.burger'), dr=document.getElementById('drawer'), top=document.querySelector('.top');
+  function setOpen(o){b.classList.toggle('open',o);dr.hidden=!o;btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Tancar el menú':'Obrir el menú');}
+  btn.addEventListener('click',function(){setOpen(dr.hidden);});
+  dr.addEventListener('click',function(e){if(e.target.closest('a'))setOpen(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!dr.hidden)setOpen(false);});
+  function check(){
+    var hero=document.querySelector('.page:not([hidden]) .hero');
+    var compact=false;
+    if(hero){var end=hero.getBoundingClientRect().bottom;compact=end>top.offsetHeight;}
+    b.classList.toggle('compact',compact);
+  }
+  window.addEventListener('scroll',check,{passive:true});
+  window.addEventListener('resize',check);
+  window.addEventListener('hashchange',function(){setOpen(false);setTimeout(check,0);});
+  check();
+})();
+</script>
+<script>
+/* Recàrrega automàtica només en local (localhost): no afecta la web publicada */
+(function(){
+  if(!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return;
+  var last=null;
+  setInterval(function(){
+    fetch(location.pathname,{method:'HEAD',cache:'no-store'}).then(function(r){
+      var m=r.headers.get('Last-Modified');
+      if(last&&m&&m!==last){var y=scrollY;sessionStorage.setItem('hy',y);location.reload();}
+      last=m;
+    }).catch(function(){});
+  },1000);
+  try{var y=sessionStorage.getItem('hy');if(y){sessionStorage.removeItem('hy');addEventListener('load',function(){scrollTo(0,+y)});}}catch(e){}
+})();
+</script>
+<script>
+(function(){
+  var chips=[].slice.call(document.querySelectorAll('.pf .chip')),works=[].slice.call(document.querySelectorAll('.pf .work')),empty=document.querySelector('.pf .empty'),q=document.getElementById('pfq'),cur='all';
+  function norm(t){return (t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+  function apply(){var term=norm((q?q.value:"").trim()),n=0;works.forEach(function(w){var okc=cur==='all'||(' '+w.getAttribute('data-cat')+' ').indexOf(' '+cur+' ')>-1;var okt=!term||norm(w.textContent).indexOf(term)>-1;var show=okc&&okt;w.hidden=!show;if(show)n++;});empty.hidden=n>0;}
+  chips.forEach(function(c){c.addEventListener('click',function(){cur=c.getAttribute('data-filter');chips.forEach(function(x){var on=x===c;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on);});apply();});});
+  if(q)q.addEventListener('input',apply);
+})();
+</script>
+<script>(function(){
+var box=document.getElementById('toybox');if(!box)return;
+function gen(){
+var W=420,H=240,C=['var(--g)','var(--b)','var(--r)','var(--y)'];
+function R(a,b){return a+Math.random()*(b-a)}function I(a,b){return Math.floor(R(a,b+1))}function P(a){return a[Math.floor(Math.random()*a.length)]}
+function col(not){var c;do{c=P(C)}while(c===not);return c}
+var pcs=[];function add(x,y,w,h,c,sh){pcs.push({x:x,y:y,w:w,h:h,c:c,sh:sh||''});return c}
+function roof(x,y,w,prev){var t=P(['tri','tri','cone','ball','semi','none']);var c=col(prev);
+ if(t==='tri'){var rw=w+I(8,20),rh=Math.min(I(34,56),H-y);if(rh>18)add(x-(rw-w)/2,y,rw,rh,c,'sh-tri')}
+ else if(t==='cone'){var cw=w*0.7,ch=Math.min(I(40,60),H-y);if(ch>18)add(x+(w-cw)/2,y,cw,ch,c,'sh-tri')}
+ else if(t==='ball'){var d=Math.min(w*0.8,40);if(y+d<=H)add(x+(w-d)/2,y,d,d,c,'sh-ball')}
+ else if(t==='semi'){add(x,y,w,w/2,c,'sh-semi')}}
+function tower(x){var w=I(40,58),y=0,n=I(2,4),prev=null;for(var i=0;i<n;i++){var h=P([w,w,w/2,w*1.3]);if(y+h>H-50)break;prev=add(x,y,w,h,col(prev),P(['','','','sh-cyl']));y+=h}roof(x,y,w,prev);return w}
+function arch(x){var cw=I(34,46),gap=I(50,80),lh=P([cw,cw*1.4]),legs=I(1,2),y=0,a=col(),b=col(a);
+ for(var k=0;k<legs;k++){var cc=k%2?b:a;add(x,y,cw,lh,cc,'');add(x+cw+gap,y,cw,lh,cc,'');y+=lh}
+ var bw=cw*2+gap+I(0,12),bx=x-(bw-(cw*2+gap))/2,bh=P([26,34,40]);var bc=col(b);add(bx,y,bw,bh,bc,P(['','','sh-arch']));y+=bh;
+ if(Math.random()<.8){var tw=I(40,56);var tx=x+(cw*2+gap-tw)/2;if(Math.random()<.5){var cc2=add(tx,y,tw,tw,col(bc),'');roof(tx,y+tw,tw,cc2)}else roof(tx,y,tw,bc)}
+ if(Math.random()<.5){var d=gap*0.7;add(x+cw+(gap-d)/2,0,d,d/2,col(bc),'sh-semi')}
+ return cw*2+gap}
+function pawn(x){var w=I(26,36),h=I(70,110);add(x,0,w,h,col(),'sh-pawn');var d=w*1.25;add(x-(d-w)/2,h-4,d,d,col(),'sh-ball');return w+6}
+function cone(x){var w=I(50,74),bh=I(30,48),c=add(x,0,w,bh,col(),P(['sh-pent','sh-hex','']));var cw=w*R(.45,.7),ch=I(40,70);add(x+(w-cw)/2,bh,cw,ch,col(c),'sh-tri');return w}
+function stairs(x){var w=I(30,40),n=I(2,4),prev=null;for(var i=0;i<n;i++){for(var j=0;j<=i;j++)prev=add(x+i*w,j*w,w,w,col(prev),'')}if(Math.random()<.6)roof(x+(n-1)*w,n*w,w,prev);return n*w}
+function dome(x){var w=I(56,80),bh=I(30,50),c=add(x,0,w,bh,col(),'');add(x,bh,w,w/2,col(c),'sh-semi');return w}
+var G=[tower,tower,arch,pawn,cone,stairs,dome],x=0,used=[];
+while(x<W-40){var g=P(G);if(used.length&&g===used[used.length-1])continue;var start=pcs.length,w=g(x);
+ var maxX=0;for(var i=start;i<pcs.length;i++)maxX=Math.max(maxX,pcs[i].x+pcs[i].w);
+ if(maxX>W){pcs.length=start;if(used.length>=3)break;used.push(g);continue}
+ used.push(g);x=maxX+I(10,22)}
+var minX=Math.min.apply(null,pcs.map(function(p){return p.x})),maxX2=Math.max.apply(null,pcs.map(function(p){return p.x+p.w})),off=(W-(maxX2-minX))/2-minX;
+var html='';pcs.forEach(function(p,i){var y=Math.min(p.y,H-p.h);html+='<i class="pc '+p.sh+'" style="left:'+((p.x+off)/W*100).toFixed(2)+'%;bottom:'+(y/H*100).toFixed(2)+'%;width:'+(p.w/W*100).toFixed(2)+'%;height:'+(p.h/H*100).toFixed(2)+'%;background:'+p.c+';animation-delay:'+(i*0.12).toFixed(2)+'s"></i>'});
+box.innerHTML=html;}
+var cast=box.closest('.castle');
+function inView(){var r=cast.getBoundingClientRect();return r.top<innerHeight&&r.bottom>0}
+function rebuild(){cast.classList.add('fading');setTimeout(function(){gen();cast.classList.remove('build','fading');void cast.offsetWidth;if(inView())cast.classList.add('build');},450)}
+gen();
+window.addEventListener('hashchange',function(){gen();});
+setInterval(function(){if(inView())rebuild();},9000);
+})();</script>
+<script>(function(){var c=document.querySelector('.castle');if(!c)return;
+function chk(){var r=c.getBoundingClientRect(),h=window.innerHeight;if(r.top<h-r.height*.35&&r.bottom>0){c.classList.add('build');}else if(r.top>h){c.classList.remove('build');}}
+window.addEventListener('scroll',chk,{passive:true});window.addEventListener('resize',chk);window.addEventListener('hashchange',function(){c.classList.remove('build');setTimeout(chk,60);});chk();})();</script>
+<script>(function(){var f=document.querySelector('form[name="contacte"]');if(!f)return;var msg=f.querySelector('.fmsg'),btn=f.querySelector('.fsend');
+f.addEventListener('submit',function(e){e.preventDefault();msg.className='fmsg';msg.textContent='';var ok=true;
+[].forEach.call(f.querySelectorAll('[required]'),function(el){var bad=el.type==='checkbox'?!el.checked:!el.value.trim()||(el.type==='email'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value));el.classList.toggle('err',bad);if(bad)ok=false;});
+if(!ok){msg.className='fmsg ko';msg.textContent='Revisa els camps marcats amb *.';return;}
+btn.disabled=true;var data=new URLSearchParams(new FormData(f)).toString();
+fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data}).then(function(r){if(!r.ok)throw 0;f.reset();msg.className='fmsg ok';msg.textContent='Gràcies! Hem rebut el teu missatge i et respondrem aviat.';}).catch(function(){msg.className='fmsg ko';msg.innerHTML='No s’ha pogut enviar. Escriu-nos a <a class="u" href="mailto:hola@honest.cat">hola@honest.cat</a>.';}).then(function(){btn.disabled=false;});});})();</script>
+</body>
+</html>
