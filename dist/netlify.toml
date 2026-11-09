@@ -1,0 +1,29 @@
+[build]
+  publish = "."   # dist/ es la carpeta publicada
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Sense includeSubDomains ni preload: autodiscover.honestpg.com (correu IONOS)
+    # no serveix HTTPS i forcar-l'hi trencaria la configuracio del correu.
+    Strict-Transport-Security = "max-age=31536000"
+    # Puja a https qualsevol subrecurs http:// que hi pugui entrar en el futur,
+    # perque no torni a apareixer l'avis "No es segur" amb el certificat valid.
+    Content-Security-Policy = "upgrade-insecure-requests"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/docs/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

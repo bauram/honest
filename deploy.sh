@@ -9,11 +9,13 @@ set -euo pipefail
 REPO_URL="https://github.com/bauram/honest.git"
 BRANCH="main"
 SITE_ID="06afaf32-06b9-4100-b554-337f06d5dcd1"   # hiobest / honestpg.com
-DIR="web"
+DIR="dist"
 MSG="${1:-Actualitzacio de la web d Honest}"
 MODE="${2:-draft}"
 
 cd "$(dirname "$0")"
+# genera la web estatica (una URL per pagina) abans de desplegar
+python3 build.py || { echo "✗ La build ha fallat"; exit 1; }
 [ -f "$DIR/index.html" ] || { echo "✗ No trob ./$DIR/index.html"; exit 1; }
 
 # ---------- 1. GitHub ----------
